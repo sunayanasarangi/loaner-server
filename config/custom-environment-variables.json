@@ -1,0 +1,4 @@
+{
+    "jwtPrivateKey": "microphones_jwtPrivateKey",
+    "db": "microphones_db"
+    }
