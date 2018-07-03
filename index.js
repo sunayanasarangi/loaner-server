@@ -5,13 +5,12 @@ const microphones = require('./routes/microphones');
 const express = require('express');
 const app = express();
 
-//require('./startup/db')();
+require('./startup/db')();
 
-//mongoose.connect('mongodb://localhost/microphones')
-mongoose.connect('mongodb://microphone_user:filter1@ds227481.mlab.com:27481/microphones')
+/*mongoose.connect('mongodb://localhost/microphones')
     .then(() => console.log('Connected to MongoDB Filter'))
     .catch(err => console.error('could not connect to MongoDB...', err));
-    
+   */ 
 
 app.use(express.json());
 app.use('/api', microphones);
