@@ -2,7 +2,7 @@
 const mongoose = require('mongoose');
 
 const microphoneSchema = new mongoose.Schema({
-    prod_id: String,
+    id: String,
     title: String,
     product_series: String,
     form_factor: String,
