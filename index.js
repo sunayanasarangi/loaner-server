@@ -8,13 +8,14 @@ const app = express();
 require('./startup/db')();
 require('./startup/prod')(app);
 
-/*mongoose.connect('mongodb://localhost/microphones')
+/*
+mongoose.connect('mongodb://localhost/microphones')
     .then(() => console.log('Connected to MongoDB Filter'))
     .catch(err => console.error('could not connect to MongoDB...', err));
-   */ 
+*/    
 
 app.use(express.json());
-app.use('/api/microphones', microphones);
+app.use('/api', microphones);
 
 
 
