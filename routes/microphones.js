@@ -7,7 +7,7 @@ const router = express.Router();
 
 //POST /api/microphones post a new microphone
 
-router.post('/microphones', async (req, res) => {
+router.post('/', async (req, res) => {
 
     let microphone = new Microphone({ 
         prod_id: req.body.prod_id,
@@ -34,7 +34,7 @@ router.post('/microphones', async (req, res) => {
 
 //PUT /api/microphones update a microphone
 
-router.put('/microphones/:id', async (req, res) => {
+router.put('/:id', async (req, res) => {
 
     const microphone = await Microphone.findByIdAndUpdate(req.params.id,
         { 
@@ -62,14 +62,14 @@ router.put('/microphones/:id', async (req, res) => {
 
 //GET /api/microphones get all microphones
 
-router.get('/microphones', async (req, res) => {
+router.get('/', async (req, res) => {
     const microphones = await Microphone.find();
     res.send(microphones);
   });
 
 //GET /api/microphones/_filter get microphones satisfying the filter query params
 
-router.get('/microphones/_filter', async (req, res) => {
+router.get('/_filter', async (req, res) => {
     var filterQuery = new Array();
     for (var propName in req.query) {
         if (req.query.hasOwnProperty(propName)) {
@@ -82,7 +82,7 @@ router.get('/microphones/_filter', async (req, res) => {
 
   //GET /api/microphones/:prodid get specific microphone
 
-router.get('/microphones/:prodid', async (req, res) => {
+router.get('/:prodid', async (req, res) => {
     const microphone = await Microphone.findOne({id: req.params.prodid});
     if (!microphone) return res.status(404).send('The microphone with the given ID was not found.');
     res.send(microphone);
