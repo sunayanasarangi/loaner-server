@@ -5,7 +5,8 @@ const microphones = require('./routes/microphones');
 const express = require('express');
 const app = express();
 
-
+require('./startup/db')();
+require('./startup/prod')(app);
 
 /*mongoose.connect('mongodb://localhost/microphones')
     .then(() => console.log('Connected to MongoDB Filter'))
@@ -15,9 +16,9 @@ const app = express();
 app.use(express.json());
 app.use('/api/microphones', microphones);
 
-require('./startup/db')();
+
 
 const port = process.env.PORT || 3000;
-app.listen(port, () => winston.info(`Listening on port ${port}...`));
-//const server = app.listen(port, () => winston.info(`Listening on port ${port}...`));
-//module.exports = server;
+//app.listen(port, () => winston.info(`Listening on port ${port}...`));
+const server = app.listen(port, () => winston.info(`Listening on port ${port}...`));
+module.exports = server;
