@@ -6,7 +6,6 @@ const express = require('express');
 const app = express();
 
 require('./startup/db')();
-require('./startup/config')();
 /*
 mongoose.connect('mongodb://localhost/microphones')
     .then(() => console.log('Connected to MongoDB Filter'))
