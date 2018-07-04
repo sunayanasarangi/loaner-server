@@ -8,7 +8,7 @@ const router = express.Router();
 //GET /api/microphones get all microphones
 
 router.get('/microphones', async (req, res) => {
-    const microphones = await Microphone.find();
+    const microphones = await Microphone.find({});
     res.send(microphones);
   });
 
