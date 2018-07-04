@@ -15,7 +15,7 @@ mongoose.connect('mongodb://localhost/microphones')
 */    
 
 app.use(express.json());
-app.use('/api/microphones', microphones);
+app.use('/api', microphones);
 
 
 
