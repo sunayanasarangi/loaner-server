@@ -34,7 +34,7 @@ router.post('/microphones', async (req, res) => {
 
 //PUT /api/microphones update a microphone
 
-router.put('/microphones/:id', async (req, res) => {
+router.put('/microphones/:prod_id', async (req, res) => {
 
     const microphone = await Microphone.findByIdAndUpdate(req.params.id,
         { 
