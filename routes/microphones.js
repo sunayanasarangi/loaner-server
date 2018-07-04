@@ -12,6 +12,15 @@ router.get('/microphones', async (req, res) => {
     res.send(microphones);
   });
 
+//GET /api/microphones/:prodid get specific microphone
+
+router.get('/microphones/:prodid', async (req, res) => {
+    console.log(req.params.prodid);
+    const microphone = await Microphone.findOne({prod_id: req.params.prodid});
+    if (!microphone) return res.status(404).send('The microphone with the given ID was not found.');
+    res.send(microphone);
+  });
+
 
 //POST /api/microphones post a new microphone
 
@@ -69,13 +78,7 @@ router.put('/microphones/:prod_id', async (req, res) => {
       res.send(microphone);
   });
 
-  //GET /api/microphones/:prod_id get specific microphone
-
-router.get('/microphones/:prodid', async (req, res) => {
-    const microphone = await Microphone.findOne({prod_id: req.params.prodid});
-    if (!microphone) return res.status(404).send('The microphone with the given ID was not found.');
-    res.send(microphone);
-  });
+ 
 
 
 
