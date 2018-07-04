@@ -63,7 +63,7 @@ router.put('/microphones/:prod_id', async (req, res) => {
 
 //GET /api/microphones get all microphones
 
-router.get('/microphones', async (req, res) => {
+router.get('/microphones/all', async (req, res) => {
     const microphones = await Microphone.find();
     res.send(microphones);
   });
