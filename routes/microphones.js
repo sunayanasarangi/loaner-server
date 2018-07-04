@@ -10,7 +10,7 @@ const router = express.Router();
 router.post('/microphones', async (req, res) => {
 
     let microphone = new Microphone({ 
-        id: req.body.prod_id,
+        prod_id: req.body.prod_id,
         title: req.body.title,
         product_series: req.body.product_series,
         form_factor: req.body.form_factor,
@@ -38,7 +38,7 @@ router.put('/microphones/:id', async (req, res) => {
 
     const microphone = await Microphone.findByIdAndUpdate(req.params.id,
         { 
-            id: req.body.prod_id,
+            prod_id: req.body.prod_id,
             title: req.body.title,
             product_series: req.body.product_series,
             form_factor: req.body.form_factor,
