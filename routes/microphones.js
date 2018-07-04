@@ -24,7 +24,7 @@ router.get('/microphones/:prodid', async (req, res) => {
 
 //POST /api/microphones post a new microphone
 
-router.post('/microphones', async (req, res) => {
+router.post('/microphone', async (req, res) => {
 
     let microphone = new Microphone({ 
         prod_id: req.body.prod_id,
@@ -51,7 +51,7 @@ router.post('/microphones', async (req, res) => {
 
 //PUT /api/microphones update a microphone
 
-router.put('/microphones/:prod_id', async (req, res) => {
+router.put('/microphone/:prod_id', async (req, res) => {
 
     //const microphone = await Microphone.findByIdAndUpdate(req.params.id,
     const microphone = await Microphone.findOneAndUpdate(req.params.prod_id,
