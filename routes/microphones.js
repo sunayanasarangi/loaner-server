@@ -5,6 +5,14 @@ const mongoose = require('mongoose');
 const express = require('express');
 const router = express.Router();
 
+//GET /api/microphones get all microphones
+
+router.get('/microphones', async (req, res) => {
+    const microphones = await Microphone.find();
+    res.send(microphones);
+  });
+
+
 //POST /api/microphones post a new microphone
 
 router.post('/microphones', async (req, res) => {
@@ -61,22 +69,15 @@ router.put('/microphones/:prod_id', async (req, res) => {
       res.send(microphone);
   });
 
-  //GET /api/microphones/:prodid get specific microphone
+  //GET /api/microphones/:prod_id get specific microphone
 
-router.get('/microphones/:prod_id', async (req, res) => {
-    const microphone = await Microphone.findOne({prod_id: req.params.prod_id});
+router.get('/microphones/:prodid', async (req, res) => {
+    const microphone = await Microphone.findOne({prod_id: req.params.prodid});
     if (!microphone) return res.status(404).send('The microphone with the given ID was not found.');
     res.send(microphone);
   });
 
 
-//GET /api/microphones get all microphones
-
-router.get('/microphones', async (req, res) => {
-    const microphones = await Microphone.find();
-    console.log("Sunayana");
-    res.send(microphones);
-  });
 
   
 
