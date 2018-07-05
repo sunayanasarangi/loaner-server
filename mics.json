@@ -220,7 +220,7 @@
         "connectors": ["3_pin_xlr"],
         "available_wireless":false,
         "image": "https://d2dfnis7z3ac76.cloudfront.net/shure_product_db/product_main_images/files/e26/5aa/a0-/original/b0751a2a8672cf0653b98bc34efdbb9a.png",
-        "tobe_discontinued": false,
+        "tobe_discontinued": true,
         "sound_source": [
             {
                 "name":"speech",
@@ -318,7 +318,7 @@
         "connectors": ["3_pin_xlr"],
         "available_wireless":false,
         "image": "https://d2dfnis7z3ac76.cloudfront.net/shure_product_db/product_main_images/files/e98/790/6b-/original/5ae83f11123f36b9cb9fc10c1a6770c2.png",
-        "tobe_discontinued": false,
+        "tobe_discontinued": true,
         "sound_source": [
             {
                 "name":"speech",
@@ -716,7 +716,7 @@
         "connectors": ["3_pin_xlr"],
         "available_wireless":false,
         "image": "https://d2dfnis7z3ac76.cloudfront.net/shure_product_db/product_main_images/files/56c/b68/05-/original/fbeeb89be0671e87557149c01d75ff51.png",
-        "tobe_discontinued": false,
+        "tobe_discontinued": true,
         "sound_source": [
             {
                 "name":"speech",
@@ -772,7 +772,7 @@
         "connectors": ["3_pin_xlr"],
         "available_wireless":false,
         "image": "https://d2dfnis7z3ac76.cloudfront.net/shure_product_db/product_main_images/files/fe7/53a/00-/original/580071f1248fc2ff8338877c5e6eaaec.png",
-        "tobe_discontinued": false,
+        "tobe_discontinued": true,
         "sound_source": [
             {
                 "name":"vocals",
@@ -1146,7 +1146,7 @@
         "connectors": ["3_pin_xlr"],
         "available_wireless":false,
         "image": "https://d2dfnis7z3ac76.cloudfront.net/shure_product_db/product_main_images/files/a35/c18/a1-/original/4111cfcd89af684ca4fd81b5e2f6c9d0.png",
-        "tobe_discontinued": false,
+        "tobe_discontinued": true,
         "sound_source": [
           {
               "name": "brass",
@@ -1437,7 +1437,7 @@
         "connectors": ["3_pin_xlr"],
         "available_wireless":false,
         "image": "https://d2dfnis7z3ac76.cloudfront.net/shure_product_db/product_main_images/files/5ae/f70/5f-/original/0da0a3eb57a81454e9287fdceac9fee7.png",
-        "tobe_discontinued": false,
+        "tobe_discontinued": true,
         "sound_source": [],
         "environments": [
             {
@@ -2458,7 +2458,7 @@
         "connectors": ["3_pin_xlr"],
         "available_wireless":false,
         "image": "https://d2dfnis7z3ac76.cloudfront.net/shure_product_db/product_main_images/files/ca0/f6f/c1-/original/f3fac521c54ca74f4da202937493482e.png",
-        "tobe_discontinued": false,
+        "tobe_discontinued": true,
         "sound_source": [
             {
                 "name": "speech",
@@ -3877,7 +3877,7 @@
         "connectors": ["usb"],
         "available_wireless":false,
         "image": "https://d2dfnis7z3ac76.cloudfront.net/shure_product_db/product_main_images/files/044/6b1/50-/original/26c598dacf418f9f5240edc2688a02ec.png",
-        "tobe_discontinued": false,
+        "tobe_discontinued": true,
         "sound_source": [],
         "environments": [],
         "industry": []
@@ -3894,7 +3894,7 @@
         "connectors": ["usb"],
         "available_wireless":false,
         "image": "https://d2dfnis7z3ac76.cloudfront.net/shure_product_db/product_main_images/files/e51/410/21-/original/07d0a472300ff2fd3855a8deb39ce806.png",
-        "tobe_discontinued": false,
+        "tobe_discontinued": true,
         "sound_source": [],
         "environments": [],
         "industry": []
@@ -4370,7 +4370,7 @@
         "connectors": ["3_pin_xlr"],
         "available_wireless":false,
         "image": "https://d2dfnis7z3ac76.cloudfront.net/shure_product_db/product_main_images/files/4b5/7db/7e-/original/f973260f6b760f6bbd8d9e8a8cda27d5.png",
-        "tobe_discontinued": false,
+        "tobe_discontinued": true,
         "sound_source": [
              {
                 "name": "acoustic_guitar ",
@@ -4819,7 +4819,7 @@
         "connectors": ["3_pin_xlr"],
         "available_wireless":false,
         "image": "https://d2dfnis7z3ac76.cloudfront.net/shure_product_db/product_main_images/files/c0d/4bf/41-/original/8fc3533d0cfed1f7febeea1c7207b2c0.png",
-        "tobe_discontinued": false,
+        "tobe_discontinued": true,
         "sound_source": [],
         "environments": [],
         "industry": []
@@ -5868,7 +5868,7 @@
         "connectors": ["3_pin_xlr"],
         "available_wireless": true,
         "image": "https://d2dfnis7z3ac76.cloudfront.net/shure_product_db/product_main_images/files/a5d/647/c3-/original/cd8720018eb7e119f6b6a4c170d33a51.png",
-        "tobe_discontinued": false,
+        "tobe_discontinued": true,
         "sound_source": [
             {
                 "name": "speech",
@@ -5903,7 +5903,7 @@
         "connectors": ["tqg"],
         "available_wireless": true,
         "image": "https://d2dfnis7z3ac76.cloudfront.net/shure_product_db/product_main_images/files/293/f5c/b4-/original/9e9c35d8d7e95bbbe8d9bf39232f8cfa.png",
-        "tobe_discontinued": false,
+        "tobe_discontinued": true,
         "sound_source": [
             {
                 "name": "speech",
@@ -5925,7 +5925,7 @@
         "connectors": ["3_pin_xlr"],
         "available_wireless":false,
         "image": "https://d2dfnis7z3ac76.cloudfront.net/shure_product_db/product_main_images/files/8db/aa5/ce-/original/3ee23a3e35b5f1057cb28816f8c314f9.png",
-        "tobe_discontinued": false,
+        "tobe_discontinued": true,
         "sound_source": [
             {
                 "name": "room_pick_up",
