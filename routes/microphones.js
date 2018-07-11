@@ -89,12 +89,5 @@ router.get('/microphones/:prodid', async (req, res) => {
     res.send(microphone);
   });
 
-//GET /api/microphones/:prodname get specific microphone
-
-router.get('/microphones/title/:prodname', async (req, res) => {
-    const microphone = await Microphone.findOne({title: req.params.prodname});
-    if (!microphone) return res.status(404).send('The microphone with the given ID was not found.');
-    res.send(microphone);
-  });
 
 module.exports = router;
