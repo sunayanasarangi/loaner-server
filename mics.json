@@ -455,7 +455,7 @@
                 "weight": "2"
             },
             {    
-                "name" : "hi_hat ",
+                "name" : "hi_hat",
                 "weight" : "1"
             },
             {
@@ -467,7 +467,7 @@
                 "weight": "2"
             },
             {
-                "name": "percussion ",
+                "name": "percussion",
                 "weight": "2"
             },
             {
@@ -643,7 +643,7 @@
                 "weight": "2"
             },
             {
-                "name": "kick_drum ",
+                "name": "kick_drum",
                 "weight": "2"
             },
             {
@@ -1153,7 +1153,7 @@
               "weight": "1"
           },
           {
-              "name": "hi_hat ",
+              "name": "hi_hat",
               "weight": "2"
           },
           {
@@ -1161,7 +1161,7 @@
               "weight": "1"
           },
           {
-              "name": "percussion ",
+              "name": "percussion",
               "weight": "2"
           },
           {
@@ -1204,7 +1204,7 @@
         "tobe_discontinued": false,
         "sound_source": [
             {
-              "name": "percussion ",
+              "name": "percussion",
               "weight": "2"
           },
           {
@@ -1252,7 +1252,7 @@
         "tobe_discontinued": false,
         "sound_source": [
             {
-              "name": "percussion ",
+              "name": "percussion",
               "weight": "2"
           },
           {
@@ -1989,7 +1989,7 @@
         "tobe_discontinued": false,
         "sound_source": [
             {
-                "name": "acoustic_guitar ",
+                "name": "acoustic_guitar",
                 "weight": "2"
             },
             {
@@ -2013,11 +2013,11 @@
                 "weight": "2"
             },
             {
-                "name": "hi_hat ",
+                "name": "hi_hat",
                 "weight": "2"
             },
             {
-                "name": "kick_drum ",
+                "name": "kick_drum",
                 "weight": "1"
             },
             {
@@ -2025,7 +2025,7 @@
                 "weight": "2"
             },
             {
-                "name": "percussion ",
+                "name": "percussion",
                 "weight": "2"
             },
             {
@@ -2137,7 +2137,7 @@
                 "weight": "2"
             },
             {
-                "name": "hi_hat ",
+                "name": "hi_hat",
                 "weight": "1"
             },
             {
@@ -2213,7 +2213,7 @@
                 "weight": "2"
             },
             {
-                "name": "kick_drum ",
+                "name": "kick_drum",
                 "weight": "1"
             },
             {
@@ -2265,7 +2265,7 @@
         "tobe_discontinued": false,
         "sound_source": [
             {
-                "name": "acoustic_guitar ",
+                "name": "acoustic_guitar",
                 "weight": "1"
             },
             {
@@ -2293,7 +2293,7 @@
                 "weight": "2"
             },
             {
-                "name": "kick_drum ",
+                "name": "kick_drum",
                 "weight": "1"
             },
             {
@@ -2305,7 +2305,7 @@
                 "weight": "2"
             },
             {
-                "name": "percussion ",
+                "name": "percussion",
                 "weight": "1"
             },
             {
@@ -2533,7 +2533,7 @@
                 "weight": "2"
             },
             {
-                "name": "percussion ",
+                "name": "percussion",
                 "weight": "1"
             },
             {
@@ -2645,7 +2645,7 @@
                 "weight": "1"
             },
             {
-                "name": "kick_drum ",
+                "name": "kick_drum",
                 "weight": "1"
             },
             {
@@ -2899,7 +2899,7 @@
         "tobe_discontinued": false,
         "sound_source": [
             {
-                "name": "acoustic_guitar ",
+                "name": "acoustic_guitar",
                 "weight": "2"
             },
             {
@@ -3934,7 +3934,7 @@
                 "weight": "2"
             },
             {
-                "name": "hi_hat ",
+                "name": "hi_hat",
                 "weight": "1"
             },
             {
@@ -3946,7 +3946,7 @@
                 "weight": "1"
             },
             {
-                "name": "percussion ",
+                "name": "percussion",
                 "weight": "2"
             },
             {
@@ -4098,7 +4098,7 @@
                 "weight": "1"
             },
             {
-                "name": "percussion ",
+                "name": "percussion",
                 "weight": "1"
             },
             {
@@ -4261,7 +4261,7 @@
                 "weight": "2"
             },
             {
-                "name": "kick_drum ",
+                "name": "kick_drum",
                 "weight": "2"
             },
             {
@@ -4373,7 +4373,7 @@
         "tobe_discontinued": true,
         "sound_source": [
              {
-                "name": "acoustic_guitar ",
+                "name": "acoustic_guitar",
                 "weight": "1"
             },
             {
@@ -4397,7 +4397,7 @@
                 "weight": "2"
             },
             {
-                "name": "kick_drum ",
+                "name": "kick_drum",
                 "weight": "1"
             },
             {
@@ -4557,7 +4557,7 @@
         "tobe_discontinued": false,
         "sound_source": [
             {
-                "name": "acoustic_guitar ",
+                "name": "acoustic_guitar",
                 "weight": "2"
             },
             {
@@ -4577,7 +4577,7 @@
                 "weight": "2"
             },
             {
-                "name": "hi_hat ",
+                "name": "hi_hat",
                 "weight": "2"
             },
             {
@@ -4585,7 +4585,7 @@
                 "weight": "2"
             },
             {
-                "name": "percussion ",
+                "name": "percussion",
                 "weight": "2"
             },
             {
@@ -4677,7 +4677,7 @@
         "tobe_discontinued": false,
         "sound_source": [
             {
-                "name": "percussion ",
+                "name": "percussion",
                 "weight": "2"
             },
             {
@@ -4856,7 +4856,7 @@
         "tobe_discontinued": false,
         "sound_source": [
              {
-                "name": "acoustic_guitar ",
+                "name": "acoustic_guitar",
                 "weight": "1"
             },
             {
@@ -4872,7 +4872,7 @@
                 "weight": "1"
             },
             {
-                "name": "hi_hat ",
+                "name": "hi_hat",
                 "weight": "1"
             },
             {
@@ -4968,7 +4968,7 @@
         "tobe_discontinued": false,
         "sound_source": [
             {
-                "name": "acoustic_guitar ",
+                "name": "acoustic_guitar",
                 "weight": "1"
             },
             {
@@ -4992,7 +4992,7 @@
                 "weight": "1"
             },
             {
-                "name": "kick_drum ",
+                "name": "kick_drum",
                 "weight": "1"
             },
             {
@@ -5000,7 +5000,7 @@
                 "weight": "2"
             },
             {
-                "name": "percussion ",
+                "name": "percussion",
                 "weight": "2"
             },
             {
@@ -5282,7 +5282,7 @@
                 "weight": "2"
             },
             {
-                "name": "acoustic_guitar ",
+                "name": "acoustic_guitar",
                 "weight": "1"
             },
             {
@@ -5302,7 +5302,7 @@
                 "weight": "2"
             },
             {
-                "name": "kick_drum ",
+                "name": "kick_drum",
                 "weight": "1"
             },
             {
@@ -5310,7 +5310,7 @@
                 "weight": "2"
             },
             {
-                "name": "percussion ",
+                "name": "percussion",
                 "weight": "2"
             },
             {
@@ -5411,6 +5411,10 @@
             },
             {
                 "name": "speech",
+                "weight": "2"
+            },
+			{
+                "name": "vocals",
                 "weight": "2"
             }
         ],
@@ -5587,7 +5591,7 @@
                 "weight": "1"
             },
             {
-                "name": "kick_drum ",
+                "name": "kick_drum",
                 "weight": "2"
             },
             {
@@ -5683,7 +5687,7 @@
                 "weight": "1"
             },
             {
-                "name": "acoustic_guitar ",
+                "name": "acoustic_guitar",
                 "weight": "2"
             },
             {
@@ -5703,7 +5707,7 @@
                 "weight": "2"
             },
             {
-                "name": "hi_hat ",
+                "name": "hi_hat",
                 "weight": "2"
             },
             {
@@ -5711,7 +5715,7 @@
                 "weight": "2"
             },
             {
-                "name": "percussion ",
+                "name": "percussion",
                 "weight": "2"
             },
             {
