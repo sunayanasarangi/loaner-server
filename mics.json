@@ -15,19 +15,19 @@
         "sound_source": [
             {
                 "name":"speech",
-                "weight":"1"
+                "weight":"2"
             }
         ],
         "environments": [
             {
                 "name":"paging_communication",
-                "weight":"1"
+                "weight":"3"
             }
         ],
         "industry": [
             {
                 "name":"commercial_installation",
-                "weight":"1"
+                "weight":"3"
             }
         ]
     },
@@ -47,19 +47,19 @@
         "sound_source": [
             {
                 "name":"speech",
-                "weight":"1"
+                "weight":"2"
             }
         ],
         "environments": [
             {
                 "name":"paging_communication",
-                "weight":"1"
+                "weight":"3"
             }
         ],
         "industry": [
             {
                 "name":"commercial_installation",
-                "weight":"1"
+                "weight":"3"
             }
         ]
     },
@@ -96,19 +96,19 @@
         "sound_source": [
             {
                 "name":"speech",
-                "weight":"1"
+                "weight":"2"
             }
         ],
         "environments": [
             {
                 "name":"paging_communication",
-                "weight":"2"
+                "weight":"5"
             }
         ],
         "industry": [
             {
                 "name":"commercial_installation",
-                "weight":"1"
+                "weight":"3"
             }
         ]
     },
@@ -128,19 +128,19 @@
         "sound_source": [
             {
               "name": "harmonica",
-              "weight": "2"
+              "weight": "5"
           }
         ],
         "environments": [
           {
               "name": "recording_studio",
-              "weight": "1"
+              "weight": "3"
           }
         ],
         "industry": [
             {
                 "name":"commercial_installation",
-                "weight":"1"
+                "weight":"3"
             }
         ]
     },
@@ -160,19 +160,19 @@
         "sound_source": [
             {
                 "name":"speech",
-                "weight":"1"
+                "weight":"3"
             }
         ],
         "environments": [
             {
                 "name":"paging_communication",
-                "weight":"2"
+                "weight":"5"
             }
         ],
         "industry": [
             {
                 "name":"commercial_installation",
-                "weight":"1"
+                "weight":"3"
             }
         ]
     },
@@ -192,19 +192,19 @@
         "sound_source": [
             {
                 "name":"speech",
-                "weight":"1"
+                "weight":"3"
             }
         ],
         "environments": [
             {
                 "name":"paging_communication",
-                "weight":"2"
+                "weight":"5"
             }
         ],
         "industry": [
             {
                 "name":"commercial_installation",
-                "weight":"1"
+                "weight":"3"
             }
         ]
     },
@@ -224,11 +224,37 @@
         "sound_source": [
             {
                 "name":"speech",
-                "weight":"1"
+                "weight":"3"
             }
         ],
-        "environments": [],
-        "industry": []
+        "environments": [
+			{
+                "name": "club",
+                "weight": "1"
+            },
+			{
+                "name": "home_project_studio",
+                "weight": "1"
+            },
+			{
+                "name": "live_performance",
+                "weight": "1"
+            },
+			{
+                "name": "rehearsal_space",
+                "weight": "1"
+            },
+			{
+                "name": "stadium",
+                "weight": "1"
+            }
+		],
+        "industry": [
+			{
+                "name":"theater",
+                "weight":"1"
+            }
+		]
     },
     {
         "prod_id": "a601f27f-230b-4ccd-a97e-798782e5a21a",
@@ -243,9 +269,36 @@
         "available_wireless":false,
         "image": "https://d2dfnis7z3ac76.cloudfront.net/shure_product_db/product_main_images/files/ed0/a06/1a-/original/b268631d94cfccd5da78f3c24e500f2d.png",
         "tobe_discontinued": false,
-        "sound_source": [],
-        "environments": [],
-        "industry": []
+        "sound_source": [
+			{
+                "name":"speech",
+                "weight":"1"
+            },
+			{
+                "name": "vocals",
+                "weight": "1"
+            }
+		],
+        "environments": [
+			{
+              "name": "auditorium",
+              "weight": "1"
+			},
+			{
+                "name": "club",
+                "weight": "1"
+            },
+			{
+                "name": "live_performance",
+                "weight": "1"
+            }
+		],
+        "industry": [
+			{
+                "name": "touring_rental",
+                "weight": "1"
+            }
+		]
     },
     {
         "prod_id": "946f7c08-1ea3-4d31-8b8a-0a343bee8618",
@@ -263,14 +316,31 @@
         "sound_source": [
             {
                 "name":"speech",
-                "weight":"2"
+                "weight":"5"
+            },
+			{
+                "name": "vocals",
+                "weight": "3"
             }
         ],
-        "environments": [],
+        "environments": [
+			{
+				"name": "auditorium",
+				"weight": "1"
+			},
+			{
+                "name": "live_performance",
+                "weight": "5"
+            },
+			{
+                "name": "stadium",
+                "weight": "5"
+            }
+		],
         "industry": [
             {
                 "name":"theater",
-                "weight":"1"
+                "weight":"3"
             }
         ]
     },
@@ -290,19 +360,19 @@
         "sound_source": [
             {
                 "name":"speech",
-                "weight":"1"
+                "weight":"2"
             }
         ],
         "environments": [
             {
                 "name":"paging_communication",
-                "weight":"2"
+                "weight":"5"
             }
         ],
         "industry": [
             {
                 "name":"commercial_installation",
-                "weight":"1"
+                "weight":"3"
             }
         ]
     },
@@ -322,11 +392,29 @@
         "sound_source": [
             {
                 "name":"speech",
-                "weight":"1"
+                "weight":"2"
             }
         ],
-        "environments": [],
-        "industry": []
+        "environments": [
+			{
+				"name": "auditorium",
+				"weight": "1"
+			},
+			{
+                "name": "club",
+                "weight": "1"
+            },
+			{
+                "name": "live_performance",
+                "weight": "1"
+            }
+		],
+        "industry": [
+			{
+                "name":"theater",
+                "weight":"1"
+            }
+		]
     },
     {
         "prod_id": "671fdf1d-e714-490b-a159-54b1f4c0f49f",
@@ -344,19 +432,19 @@
         "sound_source": [
             {
                 "name":"speech",
-                "weight":"1"
+                "weight":"2"
             }
         ],
         "environments": [
             {
                 "name":"paging_communication",
-                "weight":"1"
+                "weight":"3"
             }
         ],
         "industry": [
             {
                 "name":"commercial_installation",
-                "weight":"1"
+                "weight":"3"
             }
         ]
     },
@@ -376,19 +464,19 @@
         "sound_source": [
             {
                 "name":"speech",
-                "weight":"1"
+                "weight":"2"
             }
         ],
         "environments": [
             {
                 "name":"paging_communication",
-                "weight":"1"
+                "weight":"3"
             }
         ],
         "industry": [
             {
                 "name":"commercial_installation",
-                "weight":"1"
+                "weight":"3"
             }
         ]
     },
@@ -408,19 +496,19 @@
         "sound_source": [
             {
                 "name":"speech",
-                "weight":"1"
+                "weight":"2"
             }
         ],
         "environments": [
             {
                 "name":"paging_communication",
-                "weight":"1"
+                "weight":"3"
             }
         ],
         "industry": [
             {
                 "name":"commercial_installation",
-                "weight":"1"
+                "weight":"3"
             }
         ]
     },
@@ -440,111 +528,111 @@
         "sound_source": [
             {
                 "name": "ambience",
-                "weight": "1"
+                "weight": "3"
             },
             {    
                 "name": "banjo",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "choir",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "cymbals",
-                "weight": "2"
+                "weight": "5"
             },
             {    
                 "name" : "hi_hat",
-                "weight" : "1"
+                "weight" : "3"
             },
             {
                 "name": "leslie_cabinet",
-                "weight": "1"
+                "weight": "4"
             },
             {
                 "name": "overhead",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "percussion",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "piano",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "room_pick_up",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "snare_drum",
-                "weight": "1"
+                "weight": "3"
             },
                 {
                 "name": "toms",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "ukelele",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "violin_viola",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "woodwinds",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "drum_set",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "orchestra",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "environments": [
             {
                 "name": "club",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "home_project_studio",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "live_performance",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "rehearsal_space",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "stadium",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "recording_studio",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "industry": [
             {
                 "name": "theater",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "touring_rental",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "houses_of_worship",
-                "weight": "1"
+                "weight": "3"
             }
         ]
     },
@@ -564,63 +652,63 @@
         "sound_source": [
             {
                 "name":"electric_bass_amp",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "brass",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "cello",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "electric_guitar_amp",
-                "weight": "2"
+                "weight": "3"
             },
             {
                 "name": "leslie_cabinet",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "upright_bass",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "environments": [
             {
                 "name": "club",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "home_project_studio",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "live_performance",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "rehearsal_space",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "stadium",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "industry": [
             {
                 "name": "theater",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "touring_rental",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "houses_of_worship",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -640,15 +728,15 @@
         "sound_source": [
             {
                 "name":"electric_bass_amp",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "kick_drum",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "leslie_cabinet",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "toms",
@@ -656,51 +744,51 @@
             },
             {
                 "name": "upright_bass",
-                "weight": "1"
+                "weight": "4"
             },
             {
                 "name": "drum_set",
-                "weight": "1"
+                "weight": "4"
             }
         ],
         "environments": [
             {
                 "name": "club",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "home_project_studio",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "live_performance",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "rehearsal_space",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "stadium",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "recording_studio",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "industry": [
             {
                 "name": "theater",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "touring_rental",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "houses_of_worship",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -720,43 +808,43 @@
         "sound_source": [
             {
                 "name":"speech",
-                "weight":"2"
+                "weight":"3"
             },
             {
                 "name": "vocals",
-                "weight": "2"
+                "weight": "4"
             }
         ],
         "environments": [
             {
               "name": "auditorium",
-              "weight": "1"
-          },
-          {
+              "weight": "3"
+			},
+			{
               "name": "corporate_presentation",
-              "weight": "1"
-          },
-          {
+              "weight": "3"
+			},
+			{
               "name": "fitness_center",
-              "weight": "1"
-          },
-          {
+              "weight": "3"
+			},
+			{
               "name": "lecture_hall",
-              "weight": "1"
-          }
+              "weight": "3"
+			}
         ],
         "industry": [
             {
               "name": "theater",
-              "weight": "2"
+              "weight": "5"
           },
           {
               "name": "touring_rental",
-              "weight": "1"
+              "weight": "3"
           },
           {
               "name": "houses_of_worship",
-              "weight": "1"
+              "weight": "3"
           }
         ]
     },
@@ -776,27 +864,27 @@
         "sound_source": [
             {
                 "name":"vocals",
-                "weight":"2"
+                "weight":"4"
             }
         ],
         "environments": [
             {
               "name": "corporate_presentation",
-              "weight": "1"
+              "weight": "3"
           },
           {
               "name": "fitness_center",
-              "weight": "1"
+              "weight": "3"
           }
         ],
         "industry": [
             {
               "name": "theater",
-              "weight": "2"
+              "weight": "5"
           },
           {
               "name": "touring_rental",
-              "weight": "2"
+              "weight": "5"
           }
         ]
     },
@@ -816,47 +904,47 @@
         "sound_source": [
             {
               "name": "snare_drum",
-              "weight": "2"
+              "weight": "5"
           },
           {
               "name": "toms",
-              "weight": "2"
+              "weight": "4"
           }
         ],
         "environments": [
             {
               "name": "club",
-              "weight": "1"
+              "weight": "3"
           },
           {
               "name": "home_project_studio",
-              "weight": "1"
+              "weight": "3"
           },
           {
               "name": "live_performance",
-              "weight": "1"
+              "weight": "3"
           },
           {
               "name": "rehearsal_space",
-              "weight": "1"
+              "weight": "3"
           },
           {
               "name": "stadium",
-              "weight": "1"
+              "weight": "3"
           },
           {
               "name": "recording_studio",
-              "weight": "1"
+              "weight": "3"
           }
         ],
         "industry": [
             {
               "name": "touring_rental",
-              "weight": "2"
+              "weight": "5"
           },
           {
               "name": "houses_of_worship",
-              "weight": "2"
+              "weight": "5"
           }
         ]
     },
@@ -876,83 +964,83 @@
         "sound_source": [
             {
               "name": "banjo",
-              "weight": "1"
+              "weight": "3"
           },
           {
               "name": "cowbell",
-              "weight": "2"
+              "weight": "5"
           },
           {
               "name": "electric_guitar_amp",
-              "weight": "2"
+              "weight": "4"
           },
           {
               "name": "harmonica",
-              "weight": "1"
+              "weight": "3"
           },
           {
               "name": "leslie_cabinet",
-              "weight": "1"
+              "weight": "3"
           },
           {
               "name": "snare_drum",
-              "weight": "2"
+              "weight": "5"
           },
           {
               "name": "toms",
-              "weight": "1"
+              "weight": "3"
           },
           {
               "name": "ukelele",
-              "weight": "1"
+              "weight": "4"
           },
           {
               "name": "woodwinds",
-              "weight": "2"
+              "weight": "5"
           },
           {
               "name": "drum_set",
-              "weight": "1"
+              "weight": "3"
           }
         ],
         "environments": [
             {
               "name": "club",
-              "weight": "2"
+              "weight": "5"
           },
           {
               "name": "home_project_studio",
-              "weight": "1"
+              "weight": "3"
           },
           {
               "name": "live_performance",
-              "weight": "2"
+              "weight": "5"
           },
           {
               "name": "rehearsal_space",
-              "weight": "2"
+              "weight": "5"
           },
           {
               "name": "stadium",
-              "weight": "2"
+              "weight": "5"
           },
           {
               "name": "recording_studio",
-              "weight": "1"
+              "weight": "3"
           }
         ],
         "industry": [
             {
               "name": "theater",
-              "weight": "1"
+              "weight": "3"
           },
           {
               "name": "touring_rental",
-              "weight": "2"
+              "weight": "5"
           },
           {
               "name": "houses_of_worship",
-              "weight": "2"
+              "weight": "5"
           }
         ]
     },
@@ -972,59 +1060,59 @@
         "sound_source": [
             {
                 "name":"speech",
-                "weight":"1"
+                "weight":"2"
             },
           {
               "name": "vocals",
-              "weight": "2"
+              "weight": "5"
           }
         ],
         "environments": [
             {
               "name": "auditorium",
-              "weight": "1"
+              "weight": "3"
           },
           {
               "name": "club",
-              "weight": "2"
+              "weight": "5"
           },
           {
               "name": "corporate_presentation",
-              "weight": "2"
+              "weight": "5"
           },
           {
               "name": "home_project_studio",
-              "weight": "1"
+              "weight": "3"
           },
           {
               "name": "lecture_hall",
-              "weight": "1"
+              "weight": "3"
           },
           {
               "name": "live_performance",
-              "weight": "2"
+              "weight": "5"
           },
           {
               "name": "rehearsal_space",
-              "weight": "2"
+              "weight": "5"
           },
           {
               "name": "stadium",
-              "weight": "2"
+              "weight": "5"
           },
           {
               "name": "recording_studio",
-              "weight": "1"
+              "weight": "3"
           }
         ],
         "industry": [
           {
               "name": "touring_rental",
-              "weight": "2"
+              "weight": "5"
           },
           {
               "name": "houses_of_worship",
-              "weight": "2"
+              "weight": "5"
           }
         ]
     },
@@ -1041,9 +1129,44 @@
         "available_wireless": true,
         "image": "https://d2dfnis7z3ac76.cloudfront.net/shure_product_db/product_main_images/files/8a7/017/ed-/original/41f767f9f36e7767a3637d9ddd6ca52e.png",
         "tobe_discontinued": false,
-        "sound_source": [],
-        "environments": [],
-        "industry": []
+        "sound_source": [
+			{
+                "name":"speech",
+                "weight":"2"
+            },
+          {
+              "name": "vocals",
+              "weight": "4"
+          }
+		],
+        "environments": [
+			{
+              "name": "club",
+              "weight": "3"
+			},
+			{
+              "name": "live_performance",
+              "weight": "3"
+			},
+			{
+              "name": "rehearsal_space",
+              "weight": "3"
+			},
+			{
+              "name": "stadium",
+              "weight": "5"
+			}
+		],
+        "industry": [
+			{
+              "name": "touring_rental",
+              "weight": "5"
+          },
+          {
+              "name": "houses_of_worship",
+              "weight": "5"
+          }
+		]
     },
     {
         "prod_id": "251005f2-0b67-423b-9225-c4042c712b86",
@@ -1058,9 +1181,48 @@
         "available_wireless": true,
         "image": "https://d2dfnis7z3ac76.cloudfront.net/shure_product_db/product_main_images/files/cb9/7cf/5c-/original/86ebe1de5b000bec532acf374c66f2e2.png",
         "tobe_discontinued": false,
-        "sound_source": [],
-        "environments": [],
-        "industry": []
+        "sound_source": [
+			{
+                "name":"speech",
+                "weight":"3"
+            },
+          {
+              "name": "vocals",
+              "weight": "4"
+          }
+		],
+        "environments": [
+			{
+              "name": "auditorium",
+              "weight": "3"
+          },
+          {
+              "name": "club",
+              "weight": "3"
+          },
+		  {
+              "name": "lecture_hall",
+              "weight": "3"
+          },
+          {
+              "name": "live_performance",
+              "weight": "3"
+          },
+		  {
+              "name": "stadium",
+              "weight": "5"
+			}
+		],
+        "industry": [
+			{
+              "name": "touring_rental",
+              "weight": "5"
+          },
+          {
+              "name": "houses_of_worship",
+              "weight": "5"
+          }
+		]
     },
     {
         "prod_id": "f5a067e4-f404-43da-b174-5eb0720e0242",
@@ -1078,7 +1240,7 @@
         "sound_source": [
             {
               "name": "kick_drum",
-              "weight": "2"
+              "weight": "5"
           },
           {
               "name": "piano",
@@ -1086,52 +1248,52 @@
           },
           {
               "name": "room_pick_up",
-              "weight": "1"
+              "weight": "2"
           },
           {
               "name": "drum_set",
-              "weight": "1"
+              "weight": "3"
           }
         ],
         "environments": [
             {
               "name": "club",
-              "weight": "1"
+              "weight": "3"
           },
           {
               "name": "home_project_studio",
-              "weight": "1"
+              "weight": "3"
           },
           {
               "name": "live_performance",
-              "weight": "1"
+              "weight": "3"
           },
           {
               "name": "rehearsal_space",
-              "weight": "1"
+              "weight": "3"
           },
           {
               "name": "stadium",
-              "weight": "1"
+              "weight": "3"
           },
           {
               "name": "recording_studio",
-              "weight": "2"
+              "weight": "5"
           }
         ],
         "industry": [
             {
               "name": "theater",
-              "weight": "1"
-          },
-          {
+              "weight": "3"
+			},
+			{
               "name": "touring_rental",
-              "weight": "2"
-          },
-          {
+              "weight": "5"
+			},
+			{
               "name": "houses_of_worship",
-              "weight": "2"
-          }
+              "weight": "5"
+			}
         ]
     },
     {
@@ -1150,44 +1312,49 @@
         "sound_source": [
           {
               "name": "brass",
-              "weight": "1"
+              "weight": "3"
           },
           {
               "name": "hi_hat",
-              "weight": "2"
+              "weight": "3"
           },
           {
               "name": "leslie_cabinet",
-              "weight": "1"
+              "weight": "3"
           },
           {
               "name": "percussion",
-              "weight": "2"
-          },
-          {
-              "name": "toms",
-              "weight": "2"
+              "weight": "4"
           },
           {
               "name": "ukelele",
-              "weight": "1"
+              "weight": "3"
           },
           {
               "name": "violin_viola",
-              "weight": "1"
+              "weight": "2"
           },
           {
               "name": "woodwinds",
-              "weight": "1"
+              "weight": "3"
           }
       ],
         "environments": [
             {
               "name": "rehearsal_space",
-              "weight": "1"
+              "weight": "3"
           }
         ],
-        "industry": []
+        "industry": [
+			{
+              "name": "theater",
+              "weight": "1"
+			},
+			{
+              "name": "touring_rental",
+              "weight": "3"
+			}
+		]
     },
     {
         "prod_id": "aa4c4c0e-61ba-4743-ae80-64c667aa3e34",
@@ -1205,35 +1372,35 @@
         "sound_source": [
             {
               "name": "percussion",
-              "weight": "2"
+              "weight": "4"
           },
           {
               "name": "snare_drum",
-              "weight": "1"
+              "weight": "3"
           },
           {
               "name": "toms",
-              "weight": "2"
+              "weight": "5"
           }
         ],
         "environments": [
             {
               "name": "rehearsal_space",
-              "weight": "1"
+              "weight": "3"
           },
           {
               "name": "stadium",
-              "weight": "1"
+              "weight": "3"
           }
         ],
         "industry": [
             {
               "name": "touring_rental",
-              "weight": "1"
+              "weight": "3"
           },
           {
               "name": "houses_of_worship",
-              "weight": "2"
+              "weight": "5"
           }
         ]
     },
@@ -1253,59 +1420,59 @@
         "sound_source": [
             {
               "name": "percussion",
-              "weight": "2"
+              "weight": "5"
           },
           {
               "name": "snare_drum",
-              "weight": "2"
+              "weight": "5"
           },
           {
               "name": "toms",
-              "weight": "2"
+              "weight": "5"
           },
           {
               "name": "drum_set",
-              "weight": "1"
+              "weight": "3"
           }
         ],
         "environments": [
             {
               "name": "club",
-              "weight": "1"
+              "weight": "3"
           },
           {
               "name": "home_project_studio",
-              "weight": "1"
+              "weight": "3"
           },
           {
               "name": "live_performance",
-              "weight": "1"
+              "weight": "3"
           },
           {
               "name": "rehearsal_space",
-              "weight": "1"
+              "weight": "3"
           },
           {
               "name": "stadium",
-              "weight": "1"
+              "weight": "3"
           },
           {
               "name": "recording_studio",
-              "weight": "2"
+              "weight": "5"
           }
         ],
         "industry": [
             {
               "name": "theater",
-              "weight": "2"
+              "weight": "5"
           },
           {
               "name": "touring_rental",
-              "weight": "2"
+              "weight": "5"
           },
           {
               "name": "houses_of_worship",
-              "weight": "2"
+              "weight": "5"
           }
         ]
     },
@@ -1325,43 +1492,43 @@
         "sound_source": [
             {
                 "name":"toms",
-                "weight":"1"
+                "weight":"3"
             }
         ],
         "environments": [
             {
               "name": "club",
-              "weight": "2"
+              "weight": "5"
           },
           {
               "name": "live_performance",
-              "weight": "2"
+              "weight": "5"
           },
           {
               "name": "rehearsal_space",
-              "weight": "1"
+              "weight": "3"
           },
           {
               "name": "stadium",
-              "weight": "2"
+              "weight": "5"
           },
           {
               "name": "recording_studio",
-              "weight": "2"
+              "weight": "5"
           }
         ],
         "industry": [
             {
               "name": "theater",
-              "weight": "1"
+              "weight": "3"
           },
           {
               "name": "touring_rental",
-              "weight": "2"
+              "weight": "5"
           },
           {
               "name": "houses_of_worship",
-              "weight": "1"
+              "weight": "3"
           }
         ]
     },
@@ -1381,48 +1548,48 @@
         "sound_source": [
             {
                 "name": "brass",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "woodwinds",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "environments": [
             {
               "name": "club",
-              "weight": "1"
-          },
-          {
+              "weight": "3"
+			},
+			{
               "name": "live_performance",
-              "weight": "1"
-          },
-          {
+              "weight": "3"
+			},
+			{
               "name": "rehearsal_space",
-              "weight": "2"
-          },
-          {
+              "weight": "5"
+			},
+			{
               "name": "stadium",
-              "weight": "1"
-          },
-          {
+              "weight": "3"
+			},
+			{
               "name": "recording_studio",
-              "weight": "1"
-          }
+              "weight": "3"
+			}
         ],
         "industry": [
             {
-              "name": "theater",
-              "weight": "1"
-          },
-          {
-              "name": "touring_rental",
-              "weight": "2"
-          },
-          {
-              "name": "houses_of_worship",
-              "weight": "1"
-          }
+				"name": "theater",
+				"weight": "3"
+			},
+			{
+				"name": "touring_rental",
+				"weight": "5"
+			},
+			{
+				"name": "houses_of_worship",
+				"weight": "3"
+			}
         ]
     },
     {
@@ -1438,14 +1605,48 @@
         "available_wireless":false,
         "image": "https://d2dfnis7z3ac76.cloudfront.net/shure_product_db/product_main_images/files/5ae/f70/5f-/original/0da0a3eb57a81454e9287fdceac9fee7.png",
         "tobe_discontinued": true,
-        "sound_source": [],
-        "environments": [
+        "sound_source": [
+			{
+                "name": "percussion",
+                "weight": "1"
+            },
+			{
+				"name": "snare_drum",
+				"weight": "1"
+			},
+			{
+                "name": "toms",
+                "weight": "1"
+            },
             {
-                "name":"rehearsal_space",
-                "weight":"1"
+                "name": "drum_set",
+                "weight": "2"
+            }
+		],
+        "environments": [
+			{
+				"name": "club",
+				"weight": "1"
+			},
+			{
+				"name": "live_performance",
+				"weight": "1"
+			},
+            {
+				"name": "rehearsal_space",
+				"weight": "3"
             }
         ],
-        "industry": []
+        "industry": [
+			{
+				"name": "theater",
+				"weight": "1"
+			},
+			{
+				"name": "touring_rental",
+				"weight": "3"
+			}
+		]
     },
     {
         "prod_id": "9dfe29b1-bfc5-46ab-9da5-fe8082962b51",
@@ -1460,16 +1661,26 @@
         "available_wireless":false,
         "image": "https://d2dfnis7z3ac76.cloudfront.net/shure_product_db/product_main_images/files/707/9f0/c9-/original/6011f0683010b5ce594d06be190de5dd.png",
         "tobe_discontinued": false,
-        "sound_source": [],
-        "environments": [],
+        "sound_source": [
+			{
+                "name":"speech",
+                "weight":"1"
+            }
+		],
+        "environments": [
+			{
+                "name": "paging_communication",
+                "weight": "5"
+            }
+		],
         "industry": [
             {
                 "name": "broadcast_eng",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "film_tv_production",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -1489,18 +1700,23 @@
         "sound_source": [
             {
                 "name":"speech",
-                "weight":"1"
+                "weight":"3"
             }
         ],
-        "environments": [],
+        "environments": [
+			{
+                "name": "paging_communication",
+                "weight": "5"
+            }
+		],
         "industry": [
             {
                 "name": "broadcast_eng",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "film_tv_production",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -1520,18 +1736,23 @@
         "sound_source": [
             {
                 "name":"speech",
-                "weight":"1"
+                "weight":"3"
             }
         ],
-        "environments": [],
+        "environments": [
+			{
+                "name": "paging_communication",
+                "weight": "5"
+            }
+		],
         "industry": [
             {
                 "name": "broadcast_eng",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "film_tv_production",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -1550,19 +1771,24 @@
         "tobe_discontinued": false,
         "sound_source": [
             {
-                "name":"speech",
-                "weight":"1"
+                "name": "speech",
+                "weight": "3"
             }
         ],
-        "environments": [],
+        "environments": [
+			{
+                "name": "paging_communication",
+                "weight": "5"
+            }
+		],
         "industry": [
             {
                 "name": "broadcast_eng",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "film_tv_production",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -1581,19 +1807,24 @@
         "tobe_discontinued": false,
         "sound_source": [
             {
-                "name":"speech",
-                "weight":"1"
+                "name": "speech",
+                "weight": "3"
             }
         ],
-        "environments": [],
+        "environments": [
+			{
+                "name": "paging_communication",
+                "weight": "5"
+            }
+		],
         "industry": [
             {
                 "name": "broadcast_eng",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "film_tv_production",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -1612,19 +1843,28 @@
         "tobe_discontinued": false,
         "sound_source": [
             {
-                "name":"speech",
-                "weight":"2"
+                "name": "speech",
+                "weight": "5"
             }
         ],
-        "environments": [],
+        "environments": [
+			{
+                "name": "paging_communication",
+                "weight": "5"
+            },
+            {
+                "name": "stadium",
+                "weight": "5"
+            }
+		],
         "industry": [
             {
                 "name": "broadcast_eng",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "film_tv_production",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -1643,19 +1883,28 @@
         "tobe_discontinued": false,
         "sound_source": [
             {
-                "name":"speech",
-                "weight":"2"
+                "name": "speech",
+                "weight": "5"
             }
         ],
-        "environments": [],
+        "environments": [
+			{
+                "name": "paging_communication",
+                "weight": "5"
+            },
+            {
+                "name": "stadium",
+                "weight": "5"
+            }
+		],
         "industry": [
             {
                 "name": "broadcast_eng",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "film_tv_production",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -1674,24 +1923,24 @@
         "tobe_discontinued": false,
         "sound_source": [
             {
-                "name":"speech",
-                "weight":"1"
+                "name": "speech",
+                "weight": "2"
             }
         ],
         "environments": [
             {
-                "name":"conference_room",
-                "weight":"2"
+                "name": "conference_room",
+                "weight": "5"
             }
         ],
         "industry": [
             {
                 "name":"commercial_installation",
-                "weight":"1"
+                "weight":"3"
             },
             {
                 "name": "education",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -1711,39 +1960,39 @@
         "sound_source": [
             {
                 "name":"speech",
-                "weight":"1"
+                "weight":"2"
             }
         ],
         "environments": [
             {
                 "name": "auditorium",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "conference_room",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "corporate_presentation",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "hotel_convention",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "lecture_hall",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "industry": [
             {
                 "name":"commercial_installation",
-                "weight":"1"
+                "weight":"3"
             },
             {
                 "name": "education",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -1763,43 +2012,43 @@
         "sound_source": [
             {
                 "name":"speech",
-                "weight":"1"
+                "weight":"2"
             }
         ],
         "environments": [
             {
                 "name": "auditorium",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "conference_room",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "corporate_presentation",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "hotel_convention",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "lecture_hall",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "industry": [
             {
                 "name":"commercial_installation",
-                "weight":"1"
+                "weight":"3"
             },
             {
                 "name": "houses_of_worship",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "education",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -1819,39 +2068,39 @@
         "sound_source": [
             {
                 "name":"speech",
-                "weight":"1"
+                "weight":"2"
             }
         ],
         "environments": [
             {
                 "name": "auditorium",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "conference_room",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "corporate_presentation",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "hotel_convention",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "lecture_hall",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "industry": [
             {
                 "name":"commercial_installation",
-                "weight":"1"
+                "weight":"3"
             },
             {
                 "name": "education",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -1871,39 +2120,39 @@
         "sound_source": [
             {
                 "name":"speech",
-                "weight":"1"
+                "weight":"2"
             }
         ],
         "environments": [
             {
                 "name": "auditorium",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "conference_room",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "corporate_presentation",
-                "weight": "1"
+                "weight": "5"
             },
             {
                 "name": "hotel_convention",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "lecture_hall",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "industry": [
             {
                 "name":"commercial_installation",
-                "weight":"1"
+                "weight":"3"
             },
             {
                 "name": "houses_of_worship",
-                "weight": "1"
+                "weight": "3"
             }
         ]
     },
@@ -1923,16 +2172,29 @@
         "sound_source": [
             {
                 "name":"speech",
-                "weight":"1"
+                "weight":"2"
             }
         ],
         "environments": [
             {
                 "name":"conference_room",
-                "weight":"2"
+                "weight":"5"
             }
         ],
-        "industry": []
+        "industry": [
+			{
+                "name": "broadcast_eng",
+                "weight": "1"
+            },
+			{
+                "name": "corporate",
+                "weight": "1"
+            },
+			{
+                "name": "film_tv_production",
+                "weight": "1"
+            }
+		]
     },
     {
         "prod_id": "c3d1a237-ab21-4033-b314-5e358eaf8e23",
@@ -1950,27 +2212,27 @@
         "sound_source": [
             {
                 "name":"speech",
-                "weight":"1"
+                "weight":"2"
             }
         ],
         "environments": [
             {
                 "name": "auditorium",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "conference_room",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "lecture_hall",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "industry": [
             {
                 "name":"commercial_installation",
-                "weight":"1"
+                "weight":"3"
             }
         ]
     },
@@ -1990,127 +2252,127 @@
         "sound_source": [
             {
                 "name": "acoustic_guitar",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "ambience",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "banjo",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "cello",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "choir",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "cymbals",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "hi_hat",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "kick_drum",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "overhead",
-                "weight": "2"
+                "weight": "4"
             },
             {
                 "name": "percussion",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "piano",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "pipe_organ",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "snare_drum",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "ukelele",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "upright_bass",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "violin_viola",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "woodwinds",
-                "weight": "2"
+                "weight": "4"
             },
             {
                 "name": "drum_set",
-                "weight": "2"
+                "weight": "4"
             },
             {
                 "name": "orchestra",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "environments": [
             {
                 "name":"club",
-                "weight":"2"
+                "weight":"5"
             },
             {
                 "name": "field_recording",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "home_project_studio",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "live_performance",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "stadium",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "recording_studio",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "industry": [
             {
                 "name": "broadcast_eng",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "film_tv_production",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "theater",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "touring_rental",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "houses_of_worship",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -2130,59 +2392,59 @@
         "sound_source": [
             {
                 "name": "cello",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "choir",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "hi_hat",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "piano",
-                "weight": "1"
+                "weight": "4"
             },
             {
                 "name": "pipe_organ",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "room_pick_up",
-                "weight": "1"
+                "weight": "4"
             },
             {
                 "name": "ukelele",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "violin_viola",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "woodwinds",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "orchestra",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "environments": [
             {
                 "name":"field_recording",
-                "weight":"1"
+                "weight":"3"
             },
             {
                 "name":"recording_studio",
-                "weight":"2"
+                "weight":"5"
             }
         ],
         "industry": [
             {
                 "name": "theater",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },    
@@ -2202,51 +2464,51 @@
         "sound_source": [
             {
                 "name":"electric_bass_amp",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "brass",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "electric_guitar_amp",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "kick_drum",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "upright_bass",
-                "weight": "1"
+                "weight": "4"
             },
             {
                 "name": "violin_viola",
-                "weight": "1"
+                "weight": "4"
             },
             {
                 "name": "woodwinds",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "environments": [
             {
                 "name":"recording_studio",
-                "weight":"2"
+                "weight":"5"
             }
         ],
         "industry": [
             {
                 "name": "theater",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "touring_rental",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "houses_of_worship",
-                "weight": "1"
+                "weight": "3"
             }
         ]
     },
@@ -2266,139 +2528,139 @@
         "sound_source": [
             {
                 "name": "acoustic_guitar",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "banjo",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name":"electric_bass_amp",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "cello",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "choir",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "cymbals",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "electric_guitar_amp",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "kick_drum",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "leslie_cabinet",
-                "weight": "1"
+                "weight": "4"
             },
             {
                 "name": "overhead",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "percussion",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "piano",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "pipe_organ",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "room_pick_up",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "ukelele",
-                "weight": "1"
+                "weight": "2"
             },
             {
                 "name": "upright_bass",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "violin_viola",
-                "weight": "2"
+                "weight": "4"
             },
             {
                 "name": "vocals",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "woodwinds",
-                "weight": "2"
+                "weight": "4"
             },
             {
                 "name": "drum_set",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "orchestra",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "environments": [
             {
                 "name": "club",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "home_project_studio",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "hotel_convention",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "live_performance",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "stadium",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "recording_studio",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "industry": [
             {
                 "name": "broadcast_eng",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "film_tv_production",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "radio",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "theater",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "touring_rental",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "houses_of_worship",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -2418,31 +2680,31 @@
         "sound_source": [
             {
                 "name": "electric_guitar_amp",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "upright_bass",
-                "weight": "2"
+                "weight": "3"
             },
             {
                 "name": "violin_viola",
-                "weight": "1"
+                "weight": "2"
             },
             {
                 "name": "woodwinds",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "environments": [
             {
                 "name": "recording_studio",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "industry": [
             {
                 "name": "radio",
-                "weight": "1"
+                "weight": "3"
             }
         ]
     },
@@ -2462,31 +2724,31 @@
         "sound_source": [
             {
                 "name": "speech",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "vocals",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "environments": [
             {
                 "name": "home_project_studio",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "recording_studio",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "industry": [
             {
                 "name": "radio",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "houses_of_worship",
-                "weight": "1"
+                "weight": "3"
             }
         ]
     },
@@ -2506,115 +2768,115 @@
         "sound_source": [
             {
                 "name": "ambience",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "banjo",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name":"electric_bass_amp",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "cello",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "choir",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "cymbals",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "overhead",
-                "weight": "2"
+                "weight": "4"
             },
             {
                 "name": "percussion",
-                "weight": "1"
+                "weight": "2"
             },
             {
                 "name": "piano",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "pipe_organ",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "room_pick_up",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "speech",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "violin_viola",
-                "weight": "2"
+                "weight": "4"
             },
             {
                 "name": "vocals",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "woodwinds",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "drum_set",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "orchestra",
-                "weight": "2"
+                "weight": "4"
             }
         ],
         "environments": [
             {
                 "name": "club",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "home_project_studio",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "live_performance",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "stadium",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "recording_studio",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "industry": [
             {
                 "name": "film_tv_production",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "radio",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "theater",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "touring_rental",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "houses_of_worship",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -2634,67 +2896,67 @@
         "sound_source": [
              {
                 "name": "brass",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "electric_guitar_amp",
-                "weight": "1"
+                "weight": "2"
             },
             {
                 "name": "harmonica",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "kick_drum",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "speech",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "upright_bass",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "vocals",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "environments": [
             {
                 "name": "club",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "home_project_studio",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "live_performance",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "stadium",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "recording_studio",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "industry": [
             {
                 "name": "radio",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "touring_rental",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "houses_of_worship",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -2712,33 +2974,37 @@
         "image": "https://d2dfnis7z3ac76.cloudfront.net/shure_product_db/product_main_images/files/5f3/3ab/9d-/original/600dcb1c61f52249c76cc71f08475971.png",
         "tobe_discontinued": false,
         "sound_source": [
+			{
+                "name": "speech",
+                "weight": "3"
+            },
             {
                 "name": "vocals",
-                "weight": "2"
+                "weight": "4"
             }
         ],
         "environments": [
             {
                 "name": "club",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "live_performance",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "stadium",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "industry": [
             {
                 "name": "touring_rental",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "houses_of_worship",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -2758,31 +3024,31 @@
         "sound_source": [
             {
                 "name": "vocals",
-                "weight": "2"
+                "weight": "4"
             }
         ],
         "environments": [
             {
                 "name": "club",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "live_performance",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "stadium",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "industry": [
            {
                 "name": "touring_rental",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "houses_of_worship",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -2799,37 +3065,50 @@
         "available_wireless":false,
         "image": "https://d2dfnis7z3ac76.cloudfront.net/shure_product_db/product_main_images/files/e96/010/2b-/original/3cdd767a93d60a3c6d0035ea3dfd794b.png",
         "tobe_discontinued": false,
-        "sound_source": [],
+        "sound_source": [
+			{
+                "name": "acoustic_guitar",
+                "weight": "1"
+            },
+			{
+                "name": "speech",
+                "weight": "5"
+            },
+            {
+                "name": "vocals",
+                "weight": "1"
+            }
+		],
         "environments": [
             {
                 "name": "field_recording",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "home_project_studio",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "mobile_recording",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "rehearsal_space",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "industry": [
             {
                 "name": "film_tv_production",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "podcasting",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "radio",
-                "weight": "1"
+                "weight": "3"
             }
         ]
     },
@@ -2846,41 +3125,62 @@
         "available_wireless":false,
         "image": "https://d2dfnis7z3ac76.cloudfront.net/shure_product_db/product_main_images/files/940/2ce/3d-/original/269f2e84c54f4fe50eaa64bfdd9d178c.png",
         "tobe_discontinued": false,
-        "sound_source": [],
+        "sound_source": [
+			{
+                "name": "acoustic_guitar",
+                "weight": "2"
+            },
+            {
+                "name": "banjo",
+                "weight": "1"
+            },
+			{
+                "name": "speech",
+                "weight": "4"
+            },
+			{
+                "name": "ukelele",
+                "weight": "2"
+            },
+            {
+                "name": "vocals",
+                "weight": "2"
+            }
+		],
         "environments": [
             {
                 "name": "field_recording",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "home_project_studio",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "mobile_recording",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "rehearsal_space",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "recording_studio",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "industry": [
             {
                 "name": "film_tv_production",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "podcasting",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "radio",
-                "weight": "1"
+                "weight": "3"
             }
         ]
     },
@@ -2900,43 +3200,43 @@
         "sound_source": [
             {
                 "name": "acoustic_guitar",
-                "weight": "2"
+                "weight": "4"
             },
             {
                 "name": "ambience",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "environments": [
             {
                 "name": "field_recording",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "home_project_studio",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "mobile_recording",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "rehearsal_space",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "industry": [
             {
                 "name": "film_tv_production",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "podcasting",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "radio",
-                "weight": "1"
+                "weight": "3"
             }
         ]
     },
@@ -2956,31 +3256,31 @@
         "sound_source": [
             {
                 "name": "speech",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "environments": [
             {
                 "name": "field_recording",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "mobile_recording",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "industry": [
             {
                 "name": "film_tv_production",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "podcasting",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "radio",
-                "weight": "1"
+                "weight": "3"
             }
         ]
     },
@@ -3000,35 +3300,35 @@
         "sound_source": [
             {
                 "name": "speech",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "environments": [
             {
                 "name": "auditorium",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "conference_room",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "corporate_presentation",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "hotel_convention",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "lecture_hall",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "industry": [
             {
                 "name": "broadcast_eng",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -3048,31 +3348,31 @@
         "sound_source": [
             {
                 "name": "speech",
-                "weight": "2"
+                "weight": "3"
             }
         ],
         "environments": [
             {
                 "name": "conference_room",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "corporate_presentation",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "hotel_convention",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "lecture_hall",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "industry": [
             {
                 "name": "broadcast_eng",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -3092,39 +3392,39 @@
         "sound_source": [
             {
                 "name": "speech",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "environments": [
             {
                 "name": "auditorium",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "conference_room",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "corporate_presentation",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "hotel_convention",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "lecture_hall",
-                "weight": "2"
+                "weight": "5"
             }  
         ],
         "industry": [
             {
                 "name": "theater",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "houses_of_worship",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -3144,27 +3444,27 @@
         "sound_source": [
             {
                 "name": "speech",
-                "weight": "1"
+                "weight": "4"
             }
         ],
         "environments": [
             {
                 "name": "conference_room",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "corporate_presentation",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "hotel_convention",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "industry": [
             {
                 "name": "broadcast_eng",
-                "weight": "1"
+                "weight": "3"
             }
         ]
     },
@@ -3184,27 +3484,27 @@
         "sound_source": [
             {
                 "name": "speech",
-                "weight": "1"
+                "weight": "4"
             }
         ],
         "environments": [
             {
                 "name": "conference_room",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "corporate_presentation",
-                "weight": "1"
+                "weight": "5"
             },
             {
                 "name": "hotel_convention",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "industry": [
             {
                 "name": "broadcast_eng",
-                "weight": "1"
+                "weight": "3"
             }
         ]
     },
@@ -3224,43 +3524,43 @@
         "sound_source": [
             {
                 "name": "speech",
-                "weight": "2"
+                "weight": "4"
             }
         ],
         "environments": [
             {
                 "name": "auditorium",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "conference_room",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "corporate_presentation",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "hotel_convention",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "lecture_hall",
-                "weight": "1"
+                "weight": "3"
             }  
         ],
         "industry": [
             {
                 "name": "broadcast_eng",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "houses_of_worship",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "education",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -3280,31 +3580,31 @@
         "sound_source": [
             {
                 "name": "speech",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "environments": [
             {
                 "name": "auditorium",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "conference_room",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "lecture_hall",
-                "weight": "2"
+                "weight": "5"
             }  
         ],
         "industry": [
             {
                 "name": "theater",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "education",
-                "weight": "1"
+                "weight": "3"
             }
         ]
     },
@@ -3324,23 +3624,23 @@
         "sound_source": [
             {
                 "name":"speech",
-                "weight":"1"
+                "weight":"3"
             }
         ],
         "environments": [
             {
                 "name": "conference_room",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "industry": [
             {
                 "name":"commercial_installation",
-                "weight":"1"
+                "weight":"3"
             },
             {
                 "name": "education",
-                "weight": "1"
+                "weight": "3"
             }
         ]
     },
@@ -3360,19 +3660,19 @@
         "sound_source": [
             {
                 "name":"speech",
-                "weight":"1"
+                "weight":"3"
             }
         ],
         "environments": [
             {
                 "name": "conference_room",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "industry": [
             {
                 "name": "commercial_installation",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -3392,23 +3692,23 @@
         "sound_source": [
             {
                 "name":"speech",
-                "weight":"1"
+                "weight":"3"
             }
         ],
         "environments": [
             {
                 "name": "conference_room",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "industry": [
             {
                 "name": "theater",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "commercial_installation",
-                "weight": "2"
+                "weight": "5"
         }
         ]
     },
@@ -3428,23 +3728,23 @@
         "sound_source": [
             {
                 "name":"speech",
-                "weight":"1"
+                "weight":"3"
             }
         ],
         "environments": [
             {
                 "name": "conference_room",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "industry": [
             {
                 "name":"commercial_installation",
-                "weight":"2"
+                "weight":"5"
             },
             {
                 "name": "education",
-                "weight": "1"
+                "weight": "3"
             }
         ]
     },
@@ -3464,19 +3764,19 @@
         "sound_source": [
             {
                 "name": "speech",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "environments": [
             {
                 "name": "conference_room",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "industry": [
             {
                 "name": "commercial_installation",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -3496,16 +3796,25 @@
         "sound_source": [
             {
                 "name": "speech",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "environments": [
             {
                 "name": "conference_room",
-                "weight": "1"
+                "weight": "3"
             }
         ],
-        "industry": []
+        "industry": [
+			{
+                "name": "corporate",
+                "weight": "5"
+            },
+			{
+                "name": "commercial_installation",
+                "weight": "5"
+            }
+		]
     },
     {
         "prod_id": "ae29b271-163e-4e82-b6b2-66f73b14d850",
@@ -3523,23 +3832,23 @@
         "sound_source": [
             {
                 "name":"speech",
-                "weight":"1"
+                "weight":"3"
             }
         ],
         "environments": [
             {
                 "name": "conference_room",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "industry": [
             {
                 "name":"commercial_installation",
-                "weight":"2"
+                "weight":"3"
             },
             {
                 "name": "education",
-                "weight": "1"
+                "weight": "3"
             }
         ]
     },
@@ -3559,23 +3868,23 @@
         "sound_source": [
             {
                 "name": "speech",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "environments": [
             {
                 "name": "conference_room",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "corporate_presentation",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "industry": [
             {
                 "name": "education",
-                "weight": "1"
+                "weight": "3"
             }
         ]
     },
@@ -3595,20 +3904,29 @@
         "sound_source": [
             {
                 "name": "speech",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "environments": [
             {
                 "name": "conference_room",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "corporate_presentation",
-                "weight": "2"
+                "weight": "5"
             }
         ],
-        "industry": []
+        "industry": [
+			{
+                "name": "corporate",
+                "weight": "5"
+            },
+			{
+                "name": "commercial_installation",
+                "weight": "5"
+            }
+		]
     },
     {
         "prod_id": "619fe073-d156-44d4-8863-7f3597fc91fa",
@@ -3626,31 +3944,31 @@
         "sound_source": [
             {
                 "name":"speech",
-                "weight":"1"
+                "weight":"5"
             }
         ],
         "environments": [
             {
                 "name": "conference_room",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "corporate_presentation",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "hotel_convention",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "lecture_hall",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "industry": [
             {
                 "name":"commercial_installation",
-                "weight":"2"
+                "weight":"5"
             }
         ]
     },
@@ -3670,20 +3988,29 @@
         "sound_source": [
             {
                 "name":"speech",
-                "weight":"1"
+                "weight":"3"
             }
         ],
         "environments": [
             {
                 "name": "conference_room",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "corporate_presentation",
-                "weight": "1"
+                "weight": "3"
         }
         ],
-        "industry": []
+        "industry": [
+			{
+                "name":"commercial_installation",
+                "weight":"5"
+            },
+            {
+                "name": "education",
+                "weight": "5"
+            }
+		]
     },
     {
         "prod_id": "fa2aaee5-7a3e-4b10-8cbd-6dd7c193be3d",
@@ -3701,27 +4028,27 @@
         "sound_source": [
             {
                 "name":"speech",
-                "weight":"2"
+                "weight":"5"
             }
         ],
         "environments": [
             {
                 "name": "conference_room",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "corporate_presentation",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "industry": [
             {
                 "name":"commercial_installation",
-                "weight":"2"
+                "weight":"5"
             },
             {
                 "name": "education",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -3741,43 +4068,43 @@
         "sound_source": [
             {
                 "name": "speech",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "environments": [
             {
                 "name": "auditorium",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "conference_room",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "corporate_presentation",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "hotel_convention",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "lecture_hall",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "industry": [
             {
                 "name": "commercial_installation",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "houses_of_worship",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "education",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -3797,27 +4124,27 @@
         "sound_source": [
             {
                 "name": "speech",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "environments": [
             {
                 "name": "conference_room",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "corporate_presentation",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "industry": [
             {
                 "name": "commercial_installation",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "education",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -3837,31 +4164,31 @@
         "sound_source": [
             {
                 "name": "speech",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "environments": [
             {
                 "name": "conference_room",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "corporate_presentation",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "lecture_hall",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "industry": [
             {
                 "name": "commercial_installation",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "education",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -3878,9 +4205,53 @@
         "available_wireless":false,
         "image": "https://d2dfnis7z3ac76.cloudfront.net/shure_product_db/product_main_images/files/044/6b1/50-/original/26c598dacf418f9f5240edc2688a02ec.png",
         "tobe_discontinued": true,
-        "sound_source": [],
-        "environments": [],
-        "industry": []
+        "sound_source": [
+			{
+                "name": "acoustic_guitar",
+                "weight": "1"
+            },
+            {
+                "name": "banjo",
+                "weight": "1"
+            },
+			{
+                "name": "cello",
+                "weight": "1"
+            },
+            {
+                "name": "choir",
+                "weight": "1"
+            },
+			{
+                "name": "piano",
+                "weight": "1"
+            },
+            {
+                "name": "ukelele",
+                "weight": "1"
+            },
+            {
+                "name": "vocals",
+                "weight": "1"
+            }
+		],
+        "environments": [
+			{
+                "name": "mobile_recording",
+                "weight": "1"
+            },
+            {
+                "name": "recording_studio",
+                "weight": "1"
+            }
+			
+		],
+        "industry": [
+			{
+                "name": "podcasting",
+                "weight": "1"
+            }
+		]
     },
     {
         "prod_id": "2297a0dd-3250-429d-bc7b-628e43aa716c",
@@ -3895,9 +4266,52 @@
         "available_wireless":false,
         "image": "https://d2dfnis7z3ac76.cloudfront.net/shure_product_db/product_main_images/files/e51/410/21-/original/07d0a472300ff2fd3855a8deb39ce806.png",
         "tobe_discontinued": true,
-        "sound_source": [],
-        "environments": [],
-        "industry": []
+        "sound_source": [
+			{
+                "name": "acoustic_guitar",
+                "weight": "1"
+            },
+            {
+                "name": "banjo",
+                "weight": "1"
+            },
+			{
+                "name": "cello",
+                "weight": "1"
+            },
+            {
+                "name": "choir",
+                "weight": "1"
+            },
+			{
+                "name": "piano",
+                "weight": "1"
+            },
+            {
+                "name": "ukelele",
+                "weight": "1"
+            },
+            {
+                "name": "vocals",
+                "weight": "1"
+            }
+		],
+        "environments": [
+			{
+                "name": "mobile_recording",
+                "weight": "1"
+            },
+            {
+                "name": "recording_studio",
+                "weight": "1"
+            }
+		],
+        "industry": [
+			{
+                "name": "podcasting",
+                "weight": "1"
+            }
+		]
     },
     {
         "prod_id": "7af7806f-2ded-4cd1-80cf-8e1409517eef",
@@ -3915,139 +4329,135 @@
         "sound_source": [
             {
                 "name": "accordion",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "brass",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "cello",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "cymbals",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "electric_guitar_amp",
-                "weight": "2"
+                "weight": "3"
             },
             {
                 "name": "hi_hat",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "leslie_cabinet",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "overhead",
-                "weight": "1"
+                "weight": "2"
             },
             {
                 "name": "percussion",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "piano",
-                "weight": "2"
+                "weight": "4"
             },
             {
                 "name": "pipe_organ",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "room_pick_up",
-                "weight": "1"
-            },
-            {
-                "name": "toms",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "ukelele",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "upright_bass",
-                "weight": "2"
+                "weight": "3"
             },
             {
                 "name": "violin_viola",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "vocals",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "woodwinds",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "drum_set",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "orchestra",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "environments": [
             {
                 "name": "auditorium",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "club",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "home_project_studio",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "lecture_hall",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "live_performance",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "rehearsal_space",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "stadium",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "recording_studio",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "industry": [
             {
                 "name": "podcasting",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "radio",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "theater",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "touring_rental",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "houses_of_worship",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -4067,51 +4477,51 @@
         "sound_source": [
             {
                 "name": "ambience",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name":"electric_bass_amp",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "brass",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "cello",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "choir",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "cymbals",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "leslie_cabinet",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "overhead",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "percussion",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "piano",
-                "weight": "1"
-            },
-            {
-                "name": "pipe_organ",
                 "weight": "2"
             },
             {
+                "name": "pipe_organ",
+                "weight": "5"
+            },
+            {
                 "name": "room_pick_up",
-                "weight": "1"
+                "weight": "2"
             },
             {
                 "name": "ukelele",
@@ -4119,7 +4529,7 @@
             },
             {
                 "name": "upright_bass",
-                "weight": "1"
+                "weight": "2"
             },
             {
                 "name": "violin_viola",
@@ -4127,43 +4537,43 @@
             },
             {
                 "name": "vocals",
-                "weight": "2"
+                "weight": "3"
             },
             {
                 "name": "drum_set",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "orchestra",
-                "weight": "1"
+                "weight": "2"
             }
         ],
         "environments": [
             {
                 "name": "home_project_studio",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "rehearsal_space",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "industry": [
             {
                 "name": "podcasting",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "radio",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "theater",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "houses_of_worship",
-                "weight": "1"
+                "weight": "3"
             }
         ]
     },
@@ -4183,27 +4593,27 @@
         "sound_source": [
             {
                 "name": "speech",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "vocals",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "environments": [
             {
                 "name": "corporate_presentation",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "fitness_center",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "industry": [
             {
                 "name": "houses_of_worship",
-                "weight": "1"
+                "weight": "3"
             }
         ]
     },
@@ -4223,24 +4633,29 @@
         "sound_source": [
             {
                 "name": "speech",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "environments": [
             {
                 "name": "auditorium",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "home_project_studio",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "lecture_hall",
-                "weight": "1"
+                "weight": "3"
             }
         ],
-        "industry": []
+        "industry": [
+			{
+                "name": "houses_of_worship",
+                "weight": "1"
+            }
+		]
     },
     {
         "prod_id": "61b212eb-2921-4698-8660-995d658c79d3",
@@ -4258,11 +4673,11 @@
         "sound_source": [
             {
                 "name":"electric_bass_amp",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "kick_drum",
-                "weight": "2"
+                "weight": "4"
             },
             {
                 "name": "toms",
@@ -4272,33 +4687,33 @@
         "environments": [
             {
                 "name": "club",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "home_project_studio",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "live_performance",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "rehearsal_space",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "stadium",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "industry": [
             {
                 "name": "touring_rental",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "houses_of_worship",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -4318,43 +4733,43 @@
         "sound_source": [
             {
                 "name": "snare_drum",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "toms",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "environments": [
             {
                 "name": "club",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "home_project_studio",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "live_performance",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "rehearsal_space",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "stadium",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "industry": [
             {
                 "name": "touring_rental",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "houses_of_worship",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -4374,91 +4789,91 @@
         "sound_source": [
              {
                 "name": "acoustic_guitar",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "banjo",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "brass",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "cowbell",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "electric_guitar_amp",
-                "weight": "2"
+                "weight": "4"
             },
             {
                 "name": "harmonica",
-                "weight": "2"
+                "weight": "3"
             },
             {
                 "name": "kick_drum",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "leslie_cabinet",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "snare_drum",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "toms",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "ukelele",
-                "weight": "2"
+                "weight": "4"
             },
             {
                 "name": "woodwinds",
-                "weight": "2"
+                "weight": "4"
             }
         ],
         "environments": [
             {
                 "name": "club",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "home_project_studio",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "hotel_convention",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "live_performance",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "rehearsal_space",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "stadium",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "recording_studio",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "industry": [
             {
                 "name": "touring_rental",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "houses_of_worship",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -4478,67 +4893,67 @@
         "sound_source": [
             {
                 "name": "harmonica",
-                "weight": "1"
+                "weight": "2"
             },
             {
                 "name": "speech",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "vocals",
-                "weight": "2"
+                "weight": "4"
             }
         ],
         "environments": [
             {
                 "name": "auditorium",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "club",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "hotel_convention",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "lecture_hall",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "live_performance",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "rehearsal_space",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "stadium",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "recording_studio",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "industry": [
             {
                 "name": "podcasting",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "touring_rental",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "houses_of_worship",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "education",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -4558,47 +4973,47 @@
         "sound_source": [
             {
                 "name": "acoustic_guitar",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "ambience",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "cello",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "choir",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "cymbals",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "hi_hat",
-                "weight": "2"
+                "weight": "3"
             },
             {
                 "name": "overhead",
-                "weight": "2"
+                "weight": "4"
             },
             {
                 "name": "percussion",
-                "weight": "2"
+                "weight": "4"
             },
             {
                 "name": "piano",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "room_pick_up",
-                "weight": "2"
+                "weight": "3"
             },
             {
                 "name": "ukelele",
-                "weight": "2"
+                "weight": "3"
             },
             {
                 "name": "violin_viola",
@@ -4606,59 +5021,59 @@
             },
             {
                 "name": "woodwinds",
-                "weight": "2"
+                "weight": "3"
             },
             {
                 "name": "drum_set",
-                "weight": "2"
+                "weight": "3"
             },
             {
                 "name": "orchestra",
-                "weight": "2"
+                "weight": "4"
             }
         ],
         "environments": [
             {
                 "name": "club",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "field_recording",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "home_project_studio",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "hotel_convention",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "live_performance",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "rehearsal_space",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "stadium",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "industry": [
             {
                 "name": "theater",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "touring_rental",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "houses_of_worship",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -4678,44 +5093,49 @@
         "sound_source": [
             {
                 "name": "percussion",
-                "weight": "2"
+                "weight": "4"
             },
             {
                 "name": "snare_drum",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "toms",
-                "weight": "2"
+                "weight": "4"
             }
         ],
         "environments": [
             {
                 "name": "club",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "home_project_studio",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "live_performance",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "rehearsal_space",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "stadium",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "recording_studio",
-                "weight": "1"
+                "weight": "3"
             }
         ],
-        "industry": []
+        "industry": [
+			{
+                "name": "touring_rental",
+                "weight": "1"
+            }
+		]
     },
     {
         "prod_id": "9c5779b9-6b7f-4e22-ace2-8164a4973130",
@@ -4733,36 +5153,41 @@
         "sound_source": [
             {
                 "name": "brass",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "environments": [
             {
                 "name": "club",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "home_project_studio",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "live_performance",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "rehearsal_space",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "stadium",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "recording_studio",
-                "weight": "1"
+                "weight": "3"
             }
         ],
-        "industry": []
+        "industry": [
+			{
+                "name": "touring_rental",
+                "weight": "1"
+            }
+		]
     },
     {
         "prod_id": "8734e2c0-756b-4e92-aa50-b71e8a731856",
@@ -4780,32 +5205,37 @@
         "sound_source": [
             {
                 "name": "brass",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "environments": [
             {
                 "name": "club",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "home_project_studio",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "live_performance",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "rehearsal_space",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "stadium",
-                "weight": "1"
+                "weight": "3"
             }
         ],
-        "industry": []
+        "industry": [
+			{
+                "name": "touring_rental",
+                "weight": "1"
+            }
+		]
     },
     {
         "prod_id": "c2e817b8-cad0-45af-aa15-a09a4b3edbc2",
@@ -4820,9 +5250,32 @@
         "available_wireless":false,
         "image": "https://d2dfnis7z3ac76.cloudfront.net/shure_product_db/product_main_images/files/c0d/4bf/41-/original/8fc3533d0cfed1f7febeea1c7207b2c0.png",
         "tobe_discontinued": true,
-        "sound_source": [],
-        "environments": [],
-        "industry": []
+        "sound_source": [
+			{
+                "name": "speech",
+                "weight": "1"
+            }
+		],
+        "environments": [
+			{
+                "name": "auditorium",
+                "weight": "1"
+            },
+			{
+                "name": "club",
+                "weight": "1"
+            },
+			{
+                "name": "stadium",
+                "weight": "1"
+            }
+		],
+        "industry": [
+			{
+                "name": "broadcast_eng",
+                "weight": "1"
+            }
+		]
     },
     {
         "prod_id": "29d3990f-affd-4fb4-b8ea-c15233fe5461",
@@ -4837,9 +5290,60 @@
         "available_wireless":false,
         "image": "https://d2dfnis7z3ac76.cloudfront.net/shure_product_db/product_main_images/files/912/4f0/2c-/original/2eec511fe51553bde103de2f0f68bdd2.png",
         "tobe_discontinued": false,
-        "sound_source": [],
-        "environments": [],
-        "industry": []
+        "sound_source": [
+			{
+                "name": "speech",
+                "weight": "1"
+            }
+		],
+        "environments": [
+			{
+                "name": "auditorium",
+                "weight": "1"
+            },
+			{
+                "name": "corporate_presentation",
+                "weight": "5"
+            },
+			{
+                "name": "field_recording",
+                "weight": "1"
+            },
+			{
+                "name": "hotel_convention",
+                "weight": "1"
+            },
+			{
+                "name": "lecture_hall",
+                "weight": "1"
+            }
+		],
+        "industry": [
+			{
+                "name": "broadcast_eng",
+                "weight": "1"
+            },
+			{
+                "name": "corporate",
+                "weight": "1"
+            },
+            {
+                "name": "film_tv_production",
+                "weight": "1"
+            },
+            {
+                "name": "commercial_installation",
+                "weight": "1"
+            },
+            {
+                "name": "houses_of_worship",
+                "weight": "1"
+            },
+            {
+                "name": "education",
+                "weight": "1"
+            }
+		]
     },
     {
         "prod_id": "4ce1db87-0f88-4940-87f0-02502c11a4df",
@@ -4857,99 +5361,99 @@
         "sound_source": [
              {
                 "name": "acoustic_guitar",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "ambience",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "cello",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "cymbals",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "hi_hat",
-                "weight": "1"
-            },
-            {
-                "name": "overhead",
                 "weight": "2"
             },
             {
+                "name": "overhead",
+                "weight": "5"
+            },
+            {
                 "name": "piano",
-                "weight": "1"
+                "weight": "2"
             },
             {
                 "name": "pipe_organ",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "snare_drum",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "ukelele",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "violin_viola",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "woodwinds",
-                "weight": "1"
+                "weight": "2"
             },
             {
                 "name": "drum_set",
-                "weight": "1"
+                "weight": "2"
             }
         ],
         "environments": [
             {
                 "name": "auditorium",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "club",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "home_project_studio",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "hotel_convention",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "lecture_hall",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "live_performance",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "rehearsal_space",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "stadium",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "industry": [
              {
                 "name": "theater",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "houses_of_worship",
-                "weight": "1"
+                "weight": "3"
             }
         ]
     },
@@ -4969,51 +5473,51 @@
         "sound_source": [
             {
                 "name": "acoustic_guitar",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "ambience",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "brass",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "cello",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "choir",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "electric_guitar_amp",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "kick_drum",
-                "weight": "1"
+                "weight": "2"
             },
             {
                 "name": "leslie_cabinet",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "percussion",
-                "weight": "2"
+                "weight": "3"
             },
             {
                 "name": "piano",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "pipe_organ",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "room_pick_up",
-                "weight": "2"
+                "weight": "4"
             },
             {
                 "name": "speech",
@@ -5021,75 +5525,75 @@
             },
             {
                 "name": "upright_bass",
-                "weight": "2"
+                "weight": "4"
             },
             {
                 "name": "violin_viola",
-                "weight": "2"
+                "weight": "4"
             },
             {
                 "name": "vocals",
-                "weight": "2"
+                "weight": "4"
             },
             {
                 "name": "woodwinds",
-                "weight": "2"
+                "weight": "4"
             },
             {
                 "name": "orchestra",
-                "weight": "2"
+                "weight": "4"
             }
         ],
         "environments": [
             {
                 "name": "club",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "home_project_studio",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "live_performance",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "rehearsal_space",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "stadium",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "recording_studio",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "industry": [
             {
                 "name": "broadcast_eng",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "podcasting",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "radio",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "theater",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "touring_rental",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "houses_of_worship",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -5109,16 +5613,25 @@
         "sound_source": [
             {
                 "name": "speech",
-                "weight": "2"
+                "weight": "4"
             }
         ],
         "environments": [
             {
                 "name": "fitness_center",
-                "weight": "2"
+                "weight": "5"
             }
         ],
-        "industry": []
+        "industry": [
+			{
+                "name": "commercial_installation",
+                "weight": "1"
+            },
+            {
+                "name": "houses_of_worship",
+                "weight": "1"
+            }
+		]
     },
     {
         "prod_id": "f8ce9d3c-7bd9-4a73-b47b-80a8ca487fbe",
@@ -5136,39 +5649,39 @@
         "sound_source": [
             {
                 "name": "speech",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "vocals",
-                "weight": "2"
+                "weight": "4"
             }
         ],
         "environments": [
             {
                 "name": "club",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "fitness_center",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "live_performance",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "stadium",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "industry": [
             {
                 "name": "touring_rental",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "houses_of_worship",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -5188,24 +5701,33 @@
         "sound_source": [
             {
                 "name": "speech",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "environments": [
             {
                 "name": "club",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "fitness_center",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "live_performance",
-                "weight": "1"
+                "weight": "3"
             }
         ],
-        "industry": []
+        "industry": [
+			{
+                "name": "touring_rental",
+                "weight": "5"
+            },
+            {
+                "name": "houses_of_worship",
+                "weight": "5"
+            }	
+		]
     },
     {
         "prod_id": "d8f0344a-762f-4c27-bc1c-06469e832e5b",
@@ -5223,43 +5745,43 @@
         "sound_source": [
             {
                 "name": "speech",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "environments": [
             {
                 "name": "auditorium",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "club",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "home_project_studio",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "hotel_convention",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "lecture_hall",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "live_performance",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "rehearsal_space",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "industry": [
             {
                 "name": "education",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -5279,115 +5801,115 @@
         "sound_source": [
             {
                 "name": "accordion",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "acoustic_guitar",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "banjo",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "cowbell",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "electric_guitar_amp",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "harmonica",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "kick_drum",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "leslie_cabinet",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "percussion",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "piano",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "room_pick_up",
-                "weight": "1"
+                "weight": "2"
             },
             {
                 "name": "snare_drum",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "toms",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "ukelele",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "woodwinds",
-                "weight": "2"
+                "weight": "4"
             }
         ],
         "environments": [
             {
                 "name": "auditorium",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "club",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "home_project_studio",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "hotel_convention",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "lecture_hall",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "live_performance",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "rehearsal_space",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "stadium",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "recording_studio",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "industry": [
             {
                 "name": "theater",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "touring_rental",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "houses_of_worship",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -5405,105 +5927,121 @@
         "image": "https://d2dfnis7z3ac76.cloudfront.net/shure_product_db/product_main_images/files/cf1/51c/44-/original/dc53d07c046536d8b078318e129876f2.png",
         "tobe_discontinued": false,
         "sound_source": [
-            {
-                "name": "harmonica",
+			{
+                "name": "choir",
                 "weight": "2"
             },
             {
+                "name": "cowbell",
+                "weight": "2"
+            },
+            {
+                "name": "electric_guitar_amp",
+                "weight": "2"
+            },
+            {
+                "name": "harmonica",
+                "weight": "4"
+            },
+            {
                 "name": "speech",
+                "weight": "5"
+            },
+            {
+                "name": "ukelele",
                 "weight": "2"
             },
 			{
                 "name": "vocals",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "environments": [
             {
                 "name": "auditorium",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "club",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "conference_room",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "corporate_presentation",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "field_recording",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "home_project_studio",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "hotel_convention",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "lecture_hall",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "live_performance",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "paging_communication",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "rehearsal_space",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "stadium",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "recording_studio",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "industry": [
             {
                 "name": "broadcast_eng",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "film_tv_production",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "podcasting",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "theater",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "touring_rental",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "commercial_installation",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "houses_of_worship",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "education",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -5520,9 +6058,80 @@
         "available_wireless":false,
         "image": "https://d2dfnis7z3ac76.cloudfront.net/shure_product_db/product_main_images/files/b97/9a4/44-/original/ead38d0c16e1cd3aac78553f02086c0b.png",
         "tobe_discontinued": false,
-        "sound_source": [],
-        "environments": [],
-        "industry": []
+        "sound_source": [
+			{
+                "name": "choir",
+                "weight": "2"
+            },
+            {
+                "name": "cowbell",
+                "weight": "2"
+            },
+            {
+                "name": "electric_guitar_amp",
+                "weight": "2"
+            },
+            {
+                "name": "ukelele",
+                "weight": "2"
+            }
+		],
+        "environments": [
+			{
+                "name": "auditorium",
+                "weight": "5"
+            },
+            {
+                "name": "club",
+                "weight": "5"
+            },
+            {
+                "name": "corporate_presentation",
+                "weight": "5"
+            },
+            {
+                "name": "home_project_studio",
+                "weight": "5"
+            },
+            {
+                "name": "hotel_convention",
+                "weight": "5"
+            },
+            {
+                "name": "lecture_hall",
+                "weight": "5"
+            },
+            {
+                "name": "live_performance",
+                "weight": "5"
+            },
+            {
+                "name": "stadium",
+                "weight": "5"
+            },
+            {
+                "name": "recording_studio",
+                "weight": "5"
+            }
+		],
+        "industry": [
+			{
+                "name": "theater",
+                "weight": "5"
+            },
+            {
+                "name": "touring_rental",
+                "weight": "5"
+            },
+            {
+                "name": "houses_of_worship",
+                "weight": "5"
+            },
+            {
+                "name": "education",
+                "weight": "5"
+            }
+		]
     },
     {
         "prod_id": "7a7baef0-7beb-4653-a4c0-bac7f4ff509c",
@@ -5540,27 +6149,27 @@
         "sound_source": [
             {
                 "name": "speech",
-                "weight": "2"
+                "weight": "4"
             }
         ],
         "environments": [
             {
                 "name": "field_recording",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "mobile_recording",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "industry": [
             {
                 "name": "broadcast_eng",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "film_tv_production",
-                "weight": "1"
+                "weight": "3"
             }
         ]
     },
@@ -5580,91 +6189,91 @@
         "sound_source": [
             {
                 "name":"electric_bass_amp",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "brass",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "electric_guitar_amp",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "kick_drum",
-                "weight": "2"
+                "weight": "4"
             },
             {
                 "name": "leslie_cabinet",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "pipe_organ",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "snare_drum",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "speech",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "upright_bass",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "vocals",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "environments": [
             {
                 "name": "club",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "home_project_studio",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "live_performance",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "rehearsal_space",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "stadium",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "recording_studio",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "industry": [
             {
                 "name": "broadcast_eng",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "film_tv_production",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "podcasting",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "radio",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "touring_rental",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -5684,111 +6293,111 @@
         "sound_source": [
             {
                 "name": "accordion",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "acoustic_guitar",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "ambience",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "cello",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "choir",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "cymbals",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "hi_hat",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "overhead",
-                "weight": "2"
+                "weight": "4"
             },
             {
                 "name": "percussion",
-                "weight": "2"
+                "weight": "4"
             },
             {
                 "name": "piano",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "pipe_organ",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "ukelele",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "drum_set",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "orchestra",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "environments": [
             {
                 "name": "auditorium",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "club",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "field_recording",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "home_project_studio",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "hotel_convention",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "live_performance",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "rehearsal_space",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "stadium",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "recording_studio",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "industry": [
             {
                 "name": "theater",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "touring_rental",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "houses_of_worship",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -5808,55 +6417,55 @@
         "sound_source": [
             {
                 "name": "speech",
-                "weight": "1"
+                "weight": "2"
             },
             {
                 "name": "vocals",
-                "weight": "2"
+                "weight": "3"
             }
         ],
         "environments": [
             {
                 "name": "auditorium",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "club",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "home_project_studio",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "hotel_convention",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "lecture_hall",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "live_performance",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "rehearsal_space",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "stadium",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "industry": [
             {
                 "name": "touring_rental",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "houses_of_worship",
-                "weight": "1"
+                "weight": "3"
             }
         ]
     },
@@ -5876,7 +6485,7 @@
         "sound_source": [
             {
                 "name": "speech",
-                "weight": "1"
+                "weight": "2"
             },
             {
                 "name": "vocals",
@@ -5886,14 +6495,23 @@
         "environments": [
             {
                 "name": "home_project_studio",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "rehearsal_space",
-                "weight": "1"
+                "weight": "3"
             }
         ],
-        "industry": []
+        "industry": [
+			{
+                "name": "broadcast_eng",
+                "weight": "1"
+            },
+			{
+                "name": "commercial_installation",
+                "weight": "1"
+            }
+		]
     },
     {
         "prod_id": "7e1671f8-efdb-48fd-a647-5bcb3a5de9fe",
@@ -5911,11 +6529,65 @@
         "sound_source": [
             {
                 "name": "speech",
-                "weight": "1"
+                "weight": "3"
             }
         ],
-        "environments": [],
-        "industry": []
+        "environments": [
+			{
+                "name": "auditorium",
+                "weight": "1"
+            },
+            {
+                "name": "corporate_presentation",
+                "weight": "1"
+            },
+			{
+                "name": "field_recording",
+                "weight": "1"
+            },
+			{
+                "name": "fitness_center",
+                "weight": "1"
+            },
+            {
+                "name": "hotel_convention",
+                "weight": "1"
+            },
+            {
+                "name": "lecture_hall",
+                "weight": "1"
+            },
+            {
+                "name": "live_performance",
+                "weight": "1"
+            },
+            {
+                "name": "stadium",
+                "weight": "1"
+            }
+		],
+        "industry": [
+			{
+                "name": "film_tv_production",
+                "weight": "1"
+            },
+			{
+                "name": "theater",
+                "weight": "1"
+			},
+			{
+                "name":"commercial_installation",
+                "weight":"1"
+            },
+            {
+                "name": "houses_of_worship",
+                "weight": "1"
+            },
+            {
+                "name": "education",
+                "weight": "1"
+            }
+		]
     },
     {
         "prod_id": "8d7b0b3b-2547-4340-8a60-39cdc195b1c1",
@@ -5934,23 +6606,32 @@
             {
                 "name": "room_pick_up",
                 "weight": "1"
-            },
-            {
-                "name": "orchestra",
-                "weight": "1"
             }
         ],
         "environments": [
             {
                 "name": "field_recording",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "home_project_studio",
-                "weight": "1"
+                "weight": "3"
             }
         ],
-        "industry": []
+        "industry": [
+			{
+                "name": "theater",
+                "weight": "2"
+            },
+            {
+                "name": "touring_rental",
+                "weight": "2"
+            },
+            {
+                "name": "houses_of_worship",
+                "weight": "2"
+            }
+		]
     },
     {
         "prod_id": "eb71f360-fa2c-4404-82e5-12622a98c007",
@@ -5967,19 +6648,24 @@
         "tobe_discontinued": false,
         "sound_source": [
             {
-                "name": "speech",
-                "weight": "1"
-            },
-            {
                 "name": "vocals",
                 "weight": "1"
             }
         ],
-        "environments": [],
+        "environments": [
+			{
+                "name": "live_performance",
+                "weight": "5"
+            },
+            {
+                "name": "stadium",
+                "weight": "5"
+            }
+		],
         "industry": [
             {
                 "name": "touring_rental",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -5997,26 +6683,35 @@
         "image": "https://d2dfnis7z3ac76.cloudfront.net/shure_product_db/product_main_images/files/432/37c/4a-/original/24169967837bc1573cc226252e225987.png",
         "tobe_discontinued": false,
         "sound_source": [
+			{
+                "name": "speech",
+                "weight": "1"
+            },
             {
                 "name": "vocals",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "environments": [
             {
                 "name": "club",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "live_performance",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "stadium",
-                "weight": "2"
+                "weight": "5"
             }
         ],
-        "industry": []
+        "industry": [
+			{
+                "name": "touring_rental",
+                "weight": "5"
+            }
+		]
     },
     {
         "prod_id": "0bd61272-0ab4-451a-9e29-02589755e35b",
@@ -6034,16 +6729,25 @@
         "sound_source": [
             {
                 "name": "speech",
-                "weight": "2"
+                "weight": "3"
             }
         ],
         "environments": [
             {
                 "name": "paging_communication",
-                "weight": "1"
+                "weight": "3"
             }
         ],
-        "industry": []
+        "industry": [
+			{
+                "name": "houses_of_worship",
+                "weight": "1"
+            },
+            {
+                "name": "education",
+                "weight": "1"
+            }
+		]
     },
     {
         "prod_id": "c448bbc4-342b-4f20-8765-6ef3743011a3",
@@ -6061,7 +6765,7 @@
         "sound_source": [
             {
                 "name": "speech",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "vocals",
@@ -6071,10 +6775,19 @@
         "environments": [
             {
                 "name": "paging_communication",
-                "weight": "1"
+                "weight": "3"
             }
         ],
-        "industry": []
+        "industry": [
+			{
+                "name": "houses_of_worship",
+                "weight": "1"
+            },
+            {
+                "name": "education",
+                "weight": "1"
+            }
+		]
     },
     {
         "prod_id": "308d635e-71f9-498e-a852-a3853be5bdfc",
@@ -6089,25 +6802,30 @@
         "available_wireless":false,
         "image": "https://d2dfnis7z3ac76.cloudfront.net/shure_product_db/product_main_images/files/a49/c44/97-/original/42c219960cfc2ebb6d03ba46d8425304.png",
         "tobe_discontinued": false,
-        "sound_source": [],
+        "sound_source": [
+			{
+                "name": "speech",
+                "weight": "3"
+            }
+		],
         "environments": [
             {
                 "name": "field_recording",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "mobile_recording",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "industry": [
             {
                 "name": "broadcast_eng",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "film_tv_production",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -6127,44 +6845,44 @@
         "sound_source": [
             {
                 "name": "ambience",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "choir",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "speech",
-                "weight": "1"
+                "weight": "4"
             },
             {
                 "name": "orchestra",
-                "weight": "1"
+                "weight": "2"
             }
         ],
         "environments": [
             {
                 "name": "field_recording",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "mobile_recording",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "industry": [
             {
                 "name": "broadcast_eng",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "film_tv_production",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "theater",
-                "weight": "1"
-        }
+                "weight": "3"
+			}
         ]
     },
     {
@@ -6183,27 +6901,27 @@
         "sound_source": [
             {
                 "name": "speech",
-                "weight": "1"
+                "weight": "4"
             }
         ],
         "environments": [
             {
                 "name": "field_recording",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "mobile_recording",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "industry": [
             {
                 "name": "broadcast_eng",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "film_tv_production",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -6223,27 +6941,27 @@
         "sound_source": [
             {
                 "name": "speech",
-                "weight": "1"
+                "weight": "4"
             }
         ],
         "environments": [
             {
                 "name": "field_recording",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "mobile_recording",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "industry": [
             {
                 "name": "broadcast_eng",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "film_tv_production",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -6263,35 +6981,35 @@
         "sound_source": [
             {
                 "name": "cymbals",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "overhead",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "drum_set",
-                "weight": "2"
+                "weight": "3"
             }
         ],
         "environments": [
             {
                 "name": "field_recording",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "industry": [
             {
                 "name": "broadcast_eng",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "film_tv_production",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "theater",
-                "weight": "1"
+                "weight": "3"
             }
         ]
     },
@@ -6311,35 +7029,35 @@
         "sound_source": [
             {
                 "name": "ambience",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "speech",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "environments": [
             {
                 "name": "field_recording",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "mobile_recording",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "industry": [
             {
                 "name": "broadcast_eng",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "film_tv_production",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "theater",
-                "weight": "1"
+                "weight": "3"
             }
         ]
     },
@@ -6356,27 +7074,27 @@
         "available_wireless": true,
         "image": "https://d2dfnis7z3ac76.cloudfront.net/shure_product_db/product_main_images/files/9e4/8fe/2c-/original/323c4861e2e2816ca2644e8a15c009ba.png",
         "tobe_discontinued": false,
-        "sound_source": [
-            {
-                "name": "woodwinds",
-                "weight": "2"
-            }
-        ],
+        "sound_source": [],
         "environments": [
             {
                 "name": "club",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "live_performance",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "stadium",
-                "weight": "1"
+                "weight": "3"
             }
         ],
-        "industry": []
+        "industry": [
+			{
+                "name": "touring_rental",
+                "weight": "2"
+            }
+		]
     },
     {
         "prod_id": "aa92e5b5-f193-4125-b9e7-9643a9ca6c94",
@@ -6394,44 +7112,61 @@
         "sound_source": [
             {
                 "name": "speech",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "vocals",
-                "weight": "2"
+                "weight": "3"
             }
         ],
         "environments": [
             {
                 "name": "auditorium",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "club",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "corporate_presentation",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "hotel_convention",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "lecture_hall",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "live_performance",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "stadium",
-                "weight": "1"
+                "weight": "3"
             }
         ],
-        "industry": []
+        "industry": [
+			{
+                "name": "corporate",
+                "weight": "2"
+            },
+			{
+                "name": "theater",
+                "weight": "1"
+            },
+			{
+                "name":"commercial_installation",
+                "weight":"1"
+            },
+            {
+                "name": "education",
+                "weight": "1"
+            }
+		]
     },
     {
         "prod_id": "7b97a7a4-45e2-4e94-982c-affe9ebd5646",
@@ -6449,32 +7184,45 @@
         "sound_source": [
             {
                 "name": "speech",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "vocals",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "environments": [
             {
                 "name": "club",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "hotel_convention",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "live_performance",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "stadium",
-                "weight": "1"
+                "weight": "3"
             }
         ],
-        "industry": []
+        "industry": [
+			{
+                "name": "broadcast_eng",
+                "weight": "3"
+            },
+			{
+                "name": "theater",
+                "weight": "1"
+            },
+			{
+                "name": "touring_rental",
+                "weight": "1"
+            }
+		]
     },
     {
         "prod_id": "ab008d5d-80c8-40e3-acb8-44f8cab2557e",
@@ -6489,9 +7237,52 @@
         "available_wireless": true,
         "image": "https://d2dfnis7z3ac76.cloudfront.net/shure_product_db/product_main_images/files/23b/720/51-/original/598abf2a9da9845c837f4e74a455069d.png",
         "tobe_discontinued": false,
-        "sound_source": [],
-        "environments": [],
-        "industry": []
+        "sound_source": [
+			{
+                "name": "speech",
+                "weight": "1"
+            }
+		],
+        "environments": [
+			{
+                "name": "auditorium",
+                "weight": "1"
+            },
+            {
+                "name": "corporate_presentation",
+                "weight": "1"
+            },
+            {
+                "name": "hotel_convention",
+                "weight": "1"
+            },
+            {
+                "name": "lecture_hall",
+                "weight": "1"
+            },
+			{
+                "name": "stadium",
+                "weight": "1"
+            }
+		],
+        "industry": [
+			{
+                "name": "corporate",
+                "weight": "1"
+            },
+			{
+                "name": "theater",
+                "weight": "1"
+            },
+			{
+                "name":"commercial_installation",
+                "weight":"1"
+            },
+            {
+                "name": "education",
+                "weight": "1"
+            }
+		]
     },
     {
         "prod_id": "9cd436f5-8088-4b28-849e-bc881963b939",
@@ -6506,9 +7297,52 @@
         "available_wireless": true,
         "image": "https://d2dfnis7z3ac76.cloudfront.net/shure_product_db/product_main_images/files/c26/8ee/e4-/original/c34d39c61fa8241bb50fb216eb91c070.png",
         "tobe_discontinued": false,
-        "sound_source": [],
-        "environments": [],
-        "industry": []
+        "sound_source": [
+			{
+                "name": "speech",
+                "weight": "1"
+            }
+		],
+        "environments": [
+			{
+                "name": "auditorium",
+                "weight": "1"
+            },
+            {
+                "name": "corporate_presentation",
+                "weight": "1"
+            },
+            {
+                "name": "hotel_convention",
+                "weight": "1"
+            },
+            {
+                "name": "lecture_hall",
+                "weight": "1"
+            },
+			{
+                "name": "stadium",
+                "weight": "1"
+            }
+		],
+        "industry": [
+			{
+                "name": "corporate",
+                "weight": "1"
+            },
+			{
+                "name": "theater",
+                "weight": "1"
+            },
+			{
+                "name":"commercial_installation",
+                "weight":"1"
+            },
+            {
+                "name": "education",
+                "weight": "1"
+            }
+		]
     },
     {
         "prod_id": "32cf58d6-0075-4f72-a715-62e97d2aebc2",
@@ -6523,9 +7357,52 @@
         "available_wireless":false,
         "image": "https://d2dfnis7z3ac76.cloudfront.net/shure_product_db/product_main_images/files/662/225/bd-/original/a414dd7ab7bb8af2621d7411719eab04.png",
         "tobe_discontinued": false,
-        "sound_source": [],
-        "environments": [],
-        "industry": []
+        "sound_source": [
+			{
+                "name": "speech",
+                "weight": "1"
+            }
+		],
+        "environments": [
+			{
+                "name": "auditorium",
+                "weight": "1"
+            },
+            {
+                "name": "corporate_presentation",
+                "weight": "1"
+            },
+            {
+                "name": "hotel_convention",
+                "weight": "1"
+            },
+            {
+                "name": "lecture_hall",
+                "weight": "1"
+            },
+			{
+                "name": "stadium",
+                "weight": "1"
+            }
+		],
+        "industry": [
+			{
+                "name": "corporate",
+                "weight": "1"
+            },
+			{
+                "name": "theater",
+                "weight": "1"
+            },
+			{
+                "name":"commercial_installation",
+                "weight":"1"
+            },
+            {
+                "name": "education",
+                "weight": "1"
+            }
+		]
     },
     {
         "prod_id": "45d32dd0-1f3b-4487-9d52-25f4964538c5",
@@ -6540,9 +7417,52 @@
         "available_wireless":false,
         "image": "https://d2dfnis7z3ac76.cloudfront.net/shure_product_db/product_main_images/files/d4f/e80/12-/original/8486b2345ba182e85d8684387cd07569.png",
         "tobe_discontinued": false,
-        "sound_source": [],
-        "environments": [],
-        "industry": []
+        "sound_source": [
+			{
+                "name": "speech",
+                "weight": "1"
+            }
+		],
+        "environments": [
+			{
+                "name": "auditorium",
+                "weight": "1"
+            },
+            {
+                "name": "corporate_presentation",
+                "weight": "1"
+            },
+            {
+                "name": "hotel_convention",
+                "weight": "1"
+            },
+            {
+                "name": "lecture_hall",
+                "weight": "1"
+            },
+			{
+                "name": "stadium",
+                "weight": "1"
+            }
+		],
+        "industry": [
+			{
+                "name": "corporate",
+                "weight": "1"
+            },
+			{
+                "name": "theater",
+                "weight": "1"
+            },
+			{
+                "name":"commercial_installation",
+                "weight":"1"
+            },
+            {
+                "name": "education",
+                "weight": "1"
+            }
+		]
     },
     {
         "prod_id": "ffc5eaad-3399-4ae1-9cf6-232d0636a862",
@@ -6557,9 +7477,52 @@
         "available_wireless":false,
         "image": "https://d2dfnis7z3ac76.cloudfront.net/shure_product_db/product_main_images/files/662/225/bd-/original/a414dd7ab7bb8af2621d7411719eab04.png",
         "tobe_discontinued": false,
-        "sound_source": [],
-        "environments": [],
-        "industry": []
+        "sound_source": [
+			{
+                "name": "speech",
+                "weight": "1"
+            }
+		],
+        "environments": [
+			{
+                "name": "auditorium",
+                "weight": "1"
+            },
+            {
+                "name": "corporate_presentation",
+                "weight": "1"
+            },
+            {
+                "name": "hotel_convention",
+                "weight": "1"
+            },
+            {
+                "name": "lecture_hall",
+                "weight": "1"
+            },
+			{
+                "name": "stadium",
+                "weight": "1"
+            }
+		],
+        "industry": [
+			{
+                "name": "corporate",
+                "weight": "1"
+            },
+			{
+                "name": "theater",
+                "weight": "1"
+            },
+			{
+                "name":"commercial_installation",
+                "weight":"1"
+            },
+            {
+                "name": "education",
+                "weight": "1"
+            }
+		]
     },
     {
         "prod_id": "49d54eef-6e75-41b0-940f-2ce5dcdc62cb",
@@ -6574,9 +7537,52 @@
         "available_wireless": true,
         "image": "https://d2dfnis7z3ac76.cloudfront.net/shure_product_db/product_main_images/files/1d9/c16/d7-/original/e14f7164e3516954d65e8b3493bd6cb2.png",
         "tobe_discontinued": false,
-        "sound_source": [],
-        "environments": [],
-        "industry": []
+        "sound_source": [
+			{
+                "name": "speech",
+                "weight": "1"
+            }
+		],
+        "environments": [
+			{
+                "name": "auditorium",
+                "weight": "1"
+            },
+            {
+                "name": "corporate_presentation",
+                "weight": "1"
+            },
+            {
+                "name": "hotel_convention",
+                "weight": "1"
+            },
+            {
+                "name": "lecture_hall",
+                "weight": "1"
+            },
+			{
+                "name": "stadium",
+                "weight": "1"
+            }
+		],
+        "industry": [
+			{
+                "name": "corporate",
+                "weight": "1"
+            },
+			{
+                "name": "theater",
+                "weight": "1"
+            },
+			{
+                "name":"commercial_installation",
+                "weight":"1"
+            },
+            {
+                "name": "education",
+                "weight": "1"
+            }
+		]
     },
     {
         "prod_id": "3243d11b-b5cb-4b3d-a21f-76f6e6e97152",
@@ -6591,9 +7597,52 @@
         "available_wireless": true,
         "image": "https://d2dfnis7z3ac76.cloudfront.net/shure_product_db/product_main_images/files/8e4/d81/62-/original/6d37cb8063b1b19893c58669d99b2c89.png",
         "tobe_discontinued": false,
-        "sound_source": [],
-        "environments": [],
-        "industry": []
+        "sound_source": [
+			{
+                "name": "speech",
+                "weight": "1"
+            }
+		],
+        "environments": [
+			{
+                "name": "auditorium",
+                "weight": "1"
+            },
+            {
+                "name": "corporate_presentation",
+                "weight": "1"
+            },
+            {
+                "name": "hotel_convention",
+                "weight": "1"
+            },
+            {
+                "name": "lecture_hall",
+                "weight": "1"
+            },
+			{
+                "name": "stadium",
+                "weight": "1"
+            }
+		],
+        "industry": [
+			{
+                "name": "corporate",
+                "weight": "1"
+            },
+			{
+                "name": "theater",
+                "weight": "1"
+            },
+			{
+                "name":"commercial_installation",
+                "weight":"1"
+            },
+            {
+                "name": "education",
+                "weight": "1"
+            }
+		]
     },
     {
         "prod_id": "a010e58f-5613-4569-bd40-5980ba7e593d",
@@ -6611,11 +7660,21 @@
         "sound_source": [
             {
                 "name": "speech",
-                "weight": "1"
+                "weight": "3"
             }
         ],
-        "environments": [],
-        "industry": []
+        "environments": [
+			{
+                "name": "fitness_center",
+                "weight": "3"
+            }
+		],
+        "industry": [
+			{
+                "name":"commercial_installation",
+                "weight":"1"
+            }
+		]
     },
     {
         "prod_id": "62ec3c1d-77b8-417f-a4c4-97494ea723cb",
@@ -6633,16 +7692,21 @@
         "sound_source": [
             {
                 "name": "speech",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "environments": [
             {
                 "name": "fitness_center",
-                "weight": "1"
+                "weight": "3"
             }
         ],
-        "industry": []
+        "industry": [
+			{
+                "name":"commercial_installation",
+                "weight":"1"
+            }
+		]
     },
     {
         "prod_id": "1b085d15-1797-4202-a91e-d6e5519b57eb",
@@ -6660,16 +7724,21 @@
         "sound_source": [
             {
                 "name": "speech",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "environments": [
             {
                 "name": "fitness_center",
-                "weight": "1"
+                "weight": "3"
             }
         ],
-        "industry": []
+        "industry": [
+			{
+                "name":"commercial_installation",
+                "weight":"1"
+            }
+		]
     },
     {
         "prod_id": "19582845-5485-4df6-8337-467fcc3ba6f7",
@@ -6687,31 +7756,31 @@
         "sound_source": [
             {
                 "name": "speech",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "environments": [
             {
                 "name": "conference_room",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "corporate_presentation",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "hotel_convention",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "industry": [
             {
                 "name": "broadcast_eng",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "film_tv_production",
-                "weight": "1"
+                "weight": "3"
             }
         ]
     },
@@ -6731,31 +7800,31 @@
         "sound_source": [
             {
                 "name": "speech",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "environments": [
             {
                 "name": "conference_room",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "corporate_presentation",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "hotel_convention",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "industry": [
             {
                 "name": "broadcast_eng",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "film_tv_production",
-                "weight": "1"
+                "weight": "3"
             }
         ]
     },
@@ -6775,43 +7844,43 @@
         "sound_source": [
             {
                 "name": "speech",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "environments": [
             {
                 "name": "conference_room",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "corporate_presentation",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "hotel_convention",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "lecture_hall",
-                "weight": "2"
+                "weight": "5"
             }
         ],
         "industry": [
             {
                 "name": "broadcast_eng",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "film_tv_production",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "houses_of_worship",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "education",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     },
@@ -6831,31 +7900,31 @@
         "sound_source": [
             {
                 "name": "speech",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "vocals",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "environments": [
             {
                 "name": "hotel_convention",
-                "weight": "1"
+                "weight": "3"
             }
         ],
         "industry": [
             {
                 "name": "broadcast_eng",
-                "weight": "1"
+                "weight": "3"
             },
             {
                 "name": "film_tv_production",
-                "weight": "2"
+                "weight": "5"
             },
             {
                 "name": "theater",
-                "weight": "2"
+                "weight": "5"
             }
         ]
     }
