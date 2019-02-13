@@ -1,4 +1,4 @@
 {
-    "jwtPrivateKey": "microphones_jwtPrivateKey",
-    "db": "microphones_db"
+    "jwtPrivateKey": "loaner_jwtPrivateKey",
+    "db": "loaner_db"
     }
