@@ -22,18 +22,18 @@ router.post('/loaner', async (req, res) => {
 
 //PUT /api/microphones update a microphone
 
-router.put('/loaner/:serial_number', async (req, res) => {
+router.put('/loaner/:sku', async (req, res) => {
 
-    const loaner = await Loaner.findOneAndUpdate(req.params.serial_number,
+    const loaner = await Loaner.findOneAndUpdate(req.params.sku,
         { 
-            serial_number: req.body.serial_number,
             sku: req.body.sku,
+            serial_number: req.body.serial_number,
             status: req.body.status
         }, { new: true });
     
-        if (!microphone) return res.status(404).send('The loaner with the given serial numer was not found.');
+        if (!loaner) return res.status(404).send('The loaner with the given serial numer was not found.');
       
-      res.send(microphone);
+      res.send(loaner);
   });
 
 module.exports = router;
