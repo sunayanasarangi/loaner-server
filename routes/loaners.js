@@ -10,9 +10,9 @@ const router = express.Router();
 router.post('/loaner', async (req, res) => {
 
     let loaner = new Loaner({ 
-        serial_number: req.body.serial_number,
         sku: req.body.sku,
-        product_series: req.body.product_series
+        serial_number: req.body.serial_number,
+        status: req.body.status
       });
 
       loaner = await loaner.save();
@@ -28,7 +28,7 @@ router.put('/loaner/:serial_number', async (req, res) => {
         { 
             serial_number: req.body.serial_number,
             sku: req.body.sku,
-            product_series: req.body.product_series
+            status: req.body.status
         }, { new: true });
     
         if (!microphone) return res.status(404).send('The loaner with the given serial numer was not found.');
