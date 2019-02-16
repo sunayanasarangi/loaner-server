@@ -10,7 +10,7 @@ const router = express.Router();
 router.post('/delivery', async (req, res) => {
     let result = [];
     for (var i in req.body.materials)
-        result.push(i);
+        result.push(req.body.materials[i]);
     let delivery = new Delivery({ 
         delivery_number: req.body.delivery_number,
         materials: result
