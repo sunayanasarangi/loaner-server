@@ -17,7 +17,7 @@ mongoose.connect('mongodb://localhost/microphones')
 
 app.use(express.json());
 app.use('/api', loaners);
-app.use('/api', deliveries);
+//app.use('/api', deliveries);
 
 
 const port = process.env.PORT || 3000;
