@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const express = require('express');
 const router = express.Router();
 
-//POST /api/microphones post a new microphone
+//POST /api/deliveries/delivery post a new delivery
 
 router.post('/delivery', async (req, res) => {
 
@@ -17,6 +17,13 @@ router.post('/delivery', async (req, res) => {
       delivery = await delivery.save();
       
       res.send(delivery);
+  });
+
+//GET /api/deliveries/deliveries get all deliveries
+
+router.get('/deliveries', async (req, res) => {
+    const deliveries = await Delivery.find({});
+    res.send(deliveries);
   });
 
 module.exports = router;
