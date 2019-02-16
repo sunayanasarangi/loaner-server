@@ -7,6 +7,6 @@ const deliverySchema = new mongoose.Schema({
 })
 
 //compile the schema to a model (is a class not an object)
-const Delivery = mongoose.model('Delivery', loanerSchema);
+const Delivery = mongoose.model('Delivery', deliverySchema);
 
 exports.Delivery = Delivery; 
