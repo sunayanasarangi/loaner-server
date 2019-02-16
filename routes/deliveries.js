@@ -11,7 +11,7 @@ router.post('/delivery', async (req, res) => {
 
     let delivery = new Delivery({ 
         delivery_number: req.body.delivery_number,
-        materials: req.body.materials,
+        materials: JSON.stringify(req.body.materials),
       });
 
       delivery = await delivery.save();
