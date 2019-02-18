@@ -2,9 +2,12 @@
 const mongoose = require('mongoose');
 
 const loanerSchema = new mongoose.Schema({
+    rfid: String,
     sku: String,
+    description: String,
     serial_number: String,
-    status: String
+    status: String,
+    bin: String
 })
 
 //compile the schema to a model (is a class not an object)

@@ -10,9 +10,12 @@ const router = express.Router();
 router.post('/loaner', async (req, res) => {
 
     let loaner = new Loaner({ 
+        rfid: req.body.rfid,
         sku: req.body.sku,
+        description: req.body.description,
         serial_number: req.body.serial_number,
-        status: req.body.status
+        status: req.body.status,
+        bin: req.body.bin
       });
 
       loaner = await loaner.save();
@@ -35,5 +38,17 @@ router.put('/loaner/:sku', async (req, res) => {
       
       res.send(loaner);
   });
+
+//GET /api/loaner/bins/:material get all bins that contain a material
+
+router.get('/loaner/bins/:sku', async (req, res, next) => {
+    //const bins = await Bin.match({sku: req.params.sku});
+    const bins = await Bin.aggregate([
+                            { $match: { sku: req.params.sku } }, 
+                            { $group: { _id: "$bin", count: { $sum: 1 } } }
+                        ])
+    res.send(bins);
+  });
+
 
 module.exports = router;
