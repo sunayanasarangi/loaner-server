@@ -39,11 +39,18 @@ router.put('/loaner/:sku', async (req, res) => {
       res.send(loaner);
   });
 
+//GET /api/loaners/loaners get all deliveries
+
+router.get('/loaners', async (req, res) => {
+    const loaners = await Loaner.find({});
+    res.send(loaners);
+  });
+
 //GET /api/loaner/bins/:material get all bins that contain a material
 
-router.get('/loaner/bins/:sku', async (req, res, next) => {
+router.get('/bins/:sku', async (req, res, next) => {
     //const bins = await Bin.match({sku: req.params.sku});
-    const bins = await Bin.aggregate([
+    const bins = await Loaner.aggregate([
                             { $match: { sku: req.params.sku } }, 
                             { $group: { _id: "$bin", count: { $sum: 1 } } }
                         ])
