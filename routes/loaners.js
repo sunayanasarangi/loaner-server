@@ -41,7 +41,7 @@ router.put('/loaner/:sku', async (req, res) => {
 
 //GET /api/loaners/loaners get all deliveries
 
-router.get('/loaners', async (req, res) => {
+router.get('/', async (req, res) => {
     const loaners = await Loaner.find({});
     res.send(loaners);
   });
