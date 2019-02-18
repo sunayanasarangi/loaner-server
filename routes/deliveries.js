@@ -13,7 +13,7 @@ router.post('/delivery', async (req, res) => {
         result.push(req.body.materials[i]);
     let delivery = new Delivery({ 
         delivery_number: req.body.delivery_number,
-        materials: materials
+        materials: result
       });
 
       delivery = await delivery.save();
