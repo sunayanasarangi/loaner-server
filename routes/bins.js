@@ -19,7 +19,7 @@ router.post('/bin', async (req, res) => {
 //GET /api/bins/sequence/:bin get the sequence number for a bin
 
 router.get('/sequence/:bin', async (req, res) => {
-    const sequence = await Bin.find({});
+    const sequence = await Bin.findOne({bin: req.params.bin});
     res.send(sequence);
   });
 
