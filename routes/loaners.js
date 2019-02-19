@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const express = require('express');
 const router = express.Router();
 
-//POST /api/microphones post a new microphone
+//POST /api/loaners/loaner post a new loaner
 
 router.post('/loaner', async (req, res) => {
 
@@ -23,7 +23,7 @@ router.post('/loaner', async (req, res) => {
       res.send(loaner);
   });
 
-//PUT /api/microphones update a microphone
+//PUT /api/loaners/loaner/:sku update a loaner
 
 router.put('/loaner/:sku', async (req, res) => {
 
@@ -39,7 +39,7 @@ router.put('/loaner/:sku', async (req, res) => {
       res.send(loaner);
   });
 
-//GET /api/loaners/loaners get all deliveries
+//GET /api/loaners get all deliveries
 
 router.get('/', async (req, res) => {
     const loaners = await Loaner.find({});

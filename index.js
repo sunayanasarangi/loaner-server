@@ -18,7 +18,7 @@ mongoose.connect('mongodb://localhost/microphones')
 app.use(express.json());
 app.use('/api/loaners', loaners);
 app.use('/api/deliveries', deliveries);
-
+app.use('/api/bins', deliveries);
 
 const port = process.env.PORT || 3000;
 //app.listen(port, () => winston.info(`Listening on port ${port}...`));
