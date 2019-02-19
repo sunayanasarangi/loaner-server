@@ -2,7 +2,8 @@
 const winston = require('winston');
 const mongoose = require('mongoose');
 const loaners = require('./routes/loaners');
-const deliveries = require('./routes/deliveries')
+const deliveries = require('./routes/deliveries');
+const bins = require('./routes/bins');
 const express = require('express');
 const app = express();
 
@@ -18,7 +19,7 @@ mongoose.connect('mongodb://localhost/microphones')
 app.use(express.json());
 app.use('/api/loaners', loaners);
 app.use('/api/deliveries', deliveries);
-app.use('/api/bins', deliveries);
+app.use('/api/bins', bins);
 
 const port = process.env.PORT || 3000;
 //app.listen(port, () => winston.info(`Listening on port ${port}...`));

@@ -8,14 +8,11 @@ const router = express.Router();
 //POST /api/bins/bin post a new bin
 
 router.post('/bin', async (req, res) => {
-
     let bin = new Bin({ 
         bin: req.body.bin,
         sequence: req.body.sequence
       });
-
       bin = await bin.save();
-      
       res.send(bin);
   });
 
