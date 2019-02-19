@@ -1,5 +1,5 @@
 
-const {Loaner} = require('../models/bin'); 
+const {Bin} = require('../models/bin'); 
 
 const mongoose = require('mongoose');
 const express = require('express');
@@ -17,10 +17,10 @@ router.post('/bin', async (req, res) => {
   });
 
 //GET /api/bins/sequence/:bin get the sequence number for a bin
-/*
+
 router.get('/sequence/:bin', async (req, res) => {
     const sequence = await Bin.find({});
     res.send(sequence);
-  });*/
+  });
 
 module.exports = router;
