@@ -12,7 +12,7 @@ router.post('/delivery', async (req, res) => {
     for (var i in req.body.materials)
         materials.push(req.body.materials[i]);
 
-    const delivery = new Delivery.update(
+    const delivery = await Delivery.update(
         { delivery_number: req.body.delivery_number },
         { 
             delivery_number: req.body.delivery_number,
