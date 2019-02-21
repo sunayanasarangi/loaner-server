@@ -15,7 +15,7 @@ router.post('/delivery', async (req, res) => {
     const delivery = new Delivery.updateOne(
         {delivery_number: req.body.delivery_number},
         { $set: { "materials" : materials } },
-        { upsert: true })
+        { upsert: true });
     /*
     let delivery = new Delivery({ 
         delivery_number: req.body.delivery_number,
