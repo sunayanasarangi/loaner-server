@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const express = require('express');
 const router = express.Router();
 
-//POST /api/deliveries/delivery post a new delivery
+//POST /api/deliveries/delivery post a new delivery if delivery not found, else update the delivery
 
 router.post('/delivery', async (req, res) => {
     let materials = [];

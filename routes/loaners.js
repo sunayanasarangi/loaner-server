@@ -5,10 +5,32 @@ const mongoose = require('mongoose');
 const express = require('express');
 const router = express.Router();
 
+//GET /api/loaners get all deliveries
+
+router.get('/', async (req, res) => {
+    const loaners = await Loaner.find({});
+    res.send(loaners);
+  });
+
 //POST /api/loaners/loaner post a new loaner
 
 router.post('/loaner', async (req, res) => {
 
+    const loaner = await Loaner.update(
+        { rfid: req.body.rfid },
+        { 
+            rfid: req.body.rfid,
+            sku: req.body.sku,
+            description: req.body.description,
+            serial_number: req.body.serial_number,
+            status: req.body.status,
+            bin: req.body.bin
+        },
+        { upsert: true });
+    
+      res.send(loaner);
+
+    /*
     let loaner = new Loaner({ 
         rfid: req.body.rfid,
         sku: req.body.sku,
@@ -20,7 +42,7 @@ router.post('/loaner', async (req, res) => {
 
       loaner = await loaner.save();
       
-      res.send(loaner);
+      res.send(loaner);*/
   });
 
 //PUT /api/loaners/loaner/:sku update a loaner
@@ -37,13 +59,6 @@ router.put('/loaner/:sku', async (req, res) => {
         if (!loaner) return res.status(404).send('The loaner with the given serial numer was not found.');
       
       res.send(loaner);
-  });
-
-//GET /api/loaners get all deliveries
-
-router.get('/', async (req, res) => {
-    const loaners = await Loaner.find({});
-    res.send(loaners);
   });
 
 //GET /api/loaners/bins/:material get all bins that contain a material

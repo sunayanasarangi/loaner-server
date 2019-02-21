@@ -12,7 +12,7 @@ router.get('/', async (req, res) => {
     res.send(bins);
   });
 
-//POST /api/bins/bin post a new bin
+//POST /api/bins/bin post a new bin if bin not found, else update
 
 router.post('/bin', async (req, res) => {
     const bin = await Bin.update(
@@ -24,14 +24,6 @@ router.post('/bin', async (req, res) => {
         { upsert: true });
     
       res.send(bin);
-
-    /*
-    let bin = new Bin({ 
-        bin: req.body.bin,
-        sequence: req.body.sequence
-      });
-      bin = await bin.save();
-      res.send(bin);*/
   });
 
 //GET /api/bins/sequence/:bin get the sequence number for a bin
