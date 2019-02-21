@@ -46,7 +46,7 @@ router.get('/', async (req, res) => {
     res.send(loaners);
   });
 
-//GET /api/loaner/bins/:material get all bins that contain a material
+//GET /api/loaners/bins/:material get all bins that contain a material
 
 router.get('/bins/:sku', async (req, res, next) => {
     //const bins = await Bin.match({sku: req.params.sku});

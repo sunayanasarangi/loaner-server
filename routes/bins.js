@@ -5,6 +5,13 @@ const mongoose = require('mongoose');
 const express = require('express');
 const router = express.Router();
 
+//GET /api/bins get all bins
+
+router.get('/', async (req, res) => {
+    const bins = await Bins.find({});
+    res.send(bins);
+  });
+
 //POST /api/bins/bin post a new bin
 
 router.post('/bin', async (req, res) => {
