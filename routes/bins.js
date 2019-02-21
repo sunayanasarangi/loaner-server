@@ -8,7 +8,7 @@ const router = express.Router();
 //GET /api/bins get all bins
 
 router.get('/', async (req, res) => {
-    const bins = await Bins.find({});
+    const bins = await Bin.find({});
     res.send(bins);
   });
 
