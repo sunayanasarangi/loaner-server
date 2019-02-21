@@ -31,8 +31,8 @@ router.post('/bin', async (req, res) => {
         sequence: req.body.sequence
       });
       bin = await bin.save();
-      res.send(bin);
-  });*/
+      res.send(bin);*/
+  });
 
 //GET /api/bins/sequence/:bin get the sequence number for a bin
 
