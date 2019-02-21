@@ -15,13 +15,24 @@ router.get('/', async (req, res) => {
 //POST /api/bins/bin post a new bin
 
 router.post('/bin', async (req, res) => {
+    const bin = await Bin.updateOne(
+        { bin: req.body.bin },
+        { 
+            bin: req.body.bin,
+            sequence: req.body.sequence
+        },
+        { upsert: true });
+    
+      res.send(bin);
+
+    /*
     let bin = new Bin({ 
         bin: req.body.bin,
         sequence: req.body.sequence
       });
       bin = await bin.save();
       res.send(bin);
-  });
+  });*/
 
 //GET /api/bins/sequence/:bin get the sequence number for a bin
 
