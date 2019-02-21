@@ -9,14 +9,18 @@ const router = express.Router();
 
 router.post('/delivery', async (req, res) => {
     let materials = [];
+    let picking_list = [];
     for (var i in req.body.materials)
         materials.push(req.body.materials[i]);
+    for (var i in req.body.picking_list)
+        picking_list.push(req.body.picking_list[i]);
 
     const delivery = await Delivery.update(
         { delivery_number: req.body.delivery_number },
         { 
             delivery_number: req.body.delivery_number,
-            materials: materials
+            materials: materials,
+            picking_list: picking_list
         },
         { upsert: true });
     
