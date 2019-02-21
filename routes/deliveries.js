@@ -19,20 +19,13 @@ router.post('/delivery', async (req, res) => {
             materials: materials
         },
         { upsert: true });
-    /*
-    let delivery = new Delivery({ 
-        delivery_number: req.body.delivery_number,
-        materials: materials
-      });
-
-      delivery = await delivery.save();
-      */
+    
       res.send(delivery);
   });
 
-//GET /api/deliveries/deliveries get all deliveries
+//GET /api/deliveries get all deliveries
 
-router.get('/deliveries', async (req, res) => {
+router.get('/', async (req, res) => {
     const deliveries = await Delivery.find({});
     res.send(deliveries);
   });
