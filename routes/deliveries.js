@@ -11,13 +11,19 @@ router.post('/delivery', async (req, res) => {
     let materials = [];
     for (var i in req.body.materials)
         materials.push(req.body.materials[i]);
+
+    const delivery = new Delivery.updateOne(
+        {delivery_number: req.body.delivery_number},
+        { $set: { "materials" : materials } },
+        { upsert: true })
+    /*
     let delivery = new Delivery({ 
         delivery_number: req.body.delivery_number,
         materials: materials
       });
 
       delivery = await delivery.save();
-      
+      */
       res.send(delivery);
   });
 
