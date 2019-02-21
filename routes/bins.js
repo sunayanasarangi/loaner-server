@@ -15,7 +15,7 @@ router.get('/', async (req, res) => {
 //POST /api/bins/bin post a new bin
 
 router.post('/bin', async (req, res) => {
-    const bin = await Bin.updateOne(
+    const bin = await Bin.update(
         { bin: req.body.bin },
         { 
             bin: req.body.bin,
