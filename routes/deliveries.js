@@ -5,6 +5,13 @@ const mongoose = require('mongoose');
 const express = require('express');
 const router = express.Router();
 
+//GET /api/deliveries get all deliveries
+
+router.get('/', async (req, res) => {
+    const deliveries = await Delivery.find({});
+    res.send(deliveries);
+  });
+
 //POST /api/deliveries/delivery post a new delivery if delivery not found, else update the delivery
 
 router.post('/delivery', async (req, res) => {
@@ -27,11 +34,14 @@ router.post('/delivery', async (req, res) => {
       res.send(delivery);
   });
 
-//GET /api/deliveries get all deliveries
+//GET /api/deliveries/:delivery get a particular delivery
 
-router.get('/', async (req, res) => {
-    const deliveries = await Delivery.find({});
-    res.send(deliveries);
+router.get('/:delivery', async (req, res) => {
+    const delivery = await Delivery.findOne({delivery_number: req.params.delivery});
+    if (!delivery) return res.status(404).send('The delivery with the given delivery number was not found.');
+    
+    res.send(delivery);
   });
+  
 
 module.exports = router;
