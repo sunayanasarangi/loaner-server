@@ -38,6 +38,7 @@ router.post('/delivery', async (req, res) => {
 
 router.get('/:delivery', async (req, res) => {
     const delivery = await Delivery.findOne({delivery_number: req.params.delivery});
+    
     if (!delivery) return res.status(404).send('The delivery with the given delivery number was not found.');
     
     res.send(delivery);
