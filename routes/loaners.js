@@ -5,11 +5,21 @@ const mongoose = require('mongoose');
 const express = require('express');
 const router = express.Router();
 
-//GET /api/loaners get all deliveries
+//GET /api/loaners get all materials
 
 router.get('/', async (req, res) => {
     const loaners = await Loaner.find({});
     res.send(loaners);
+  });
+
+//GET /api/loaners/:loaner get a particular material
+
+router.get('/:loaner', async (req, res) => {
+    const loaner = await Delivery.findOne({sku: req.params.loaner});
+    
+    if (!loaner) return res.status(404).send('The material was not found.');
+    
+    res.send(loaner);
   });
 
 //POST /api/loaners/loaner post a new loaner if loaner does not exist, else update it
