@@ -33,7 +33,7 @@ router.post('/loaner', async (req, res) => {
   });
 
 //PUT /api/loaners/loaner/:sku update a loaner
-
+//this has to be updated later
 router.put('/loaner/:sku', async (req, res) => {
 
     const loaner = await Loaner.findOneAndUpdate(req.params.sku,
@@ -56,7 +56,7 @@ router.get('/bins/:sku/:serial_number', async (req, res, next) => {
                             { $match: {
                                 $and: [{ sku: req.params.sku }, { serial_number: req.params.serial_number }]  }
                             }, 
-                            { $group: { _id: "$bin", count: { $sum: 1 } } }
+                            { $group: { _id: "$bin",  count: { $sum: 1 } } }
                         ])
     res.send(bins);
   });
