@@ -27,7 +27,8 @@ router.post('/delivery', async (req, res) => {
         { 
             delivery_number: req.body.delivery_number,
             materials: materials,
-            picking_list: picking_list
+            picking_list: picking_list,
+            created_at: new Date()
         },
         { upsert: true });
     

@@ -12,7 +12,7 @@ router.get('/', async (req, res) => {
     res.send(loaners);
   });
 
-//POST /api/loaners/loaner post a new loaner
+//POST /api/loaners/loaner post a new loaner if loaner does not exist, else update it
 
 router.post('/loaner', async (req, res) => {
 
@@ -30,19 +30,6 @@ router.post('/loaner', async (req, res) => {
     
       res.send(loaner);
 
-    /*
-    let loaner = new Loaner({ 
-        rfid: req.body.rfid,
-        sku: req.body.sku,
-        description: req.body.description,
-        serial_number: req.body.serial_number,
-        status: req.body.status,
-        bin: req.body.bin
-      });
-
-      loaner = await loaner.save();
-      
-      res.send(loaner);*/
   });
 
 //PUT /api/loaners/loaner/:sku update a loaner
