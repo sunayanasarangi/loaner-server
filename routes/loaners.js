@@ -15,7 +15,7 @@ router.get('/', async (req, res) => {
 //GET /api/loaners/:loaner get a particular material
 
 router.get('/:loaner', async (req, res) => {
-    const loaner = await Delivery.findOne({sku: req.params.loaner});
+    const loaner = await Loaner.findOne({sku: req.params.loaner});
     
     if (!loaner) return res.status(404).send('The material was not found.');
     
