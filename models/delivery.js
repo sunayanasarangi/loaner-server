@@ -5,7 +5,7 @@ const deliverySchema = new mongoose.Schema({
     delivery_number: String,
     materials: [],
     picking_list:[],
-    created_at: String
+    created_at: Date
 })
 
 //compile the schema to a model (is a class not an object)
