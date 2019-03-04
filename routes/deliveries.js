@@ -23,6 +23,7 @@ router.post('/delivery', async (req, res) => {
         picking_list.push(req.body.picking_list[j]);
 
     const delivery = await Delivery.update(
+        { status: req.body.status },
         { delivery_number: req.body.delivery_number },
         { 
             delivery_number: req.body.delivery_number,
