@@ -26,7 +26,7 @@ router.post('/register', async (req, res) => {
     } else {
         const salt = bcrypt.genSaltSync(10);
         const hash = bcrypt.hashSync(password, salt);
-        user = await User.insert({
+        const user = await User.save({
             name: name,
             email: email,
             hashed_password: hash,
