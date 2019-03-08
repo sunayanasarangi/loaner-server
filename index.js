@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const loaners = require('./routes/loaners');
 const deliveries = require('./routes/deliveries');
 const bins = require('./routes/bins');
+const users = require('./routes/users');
 const express = require('express');
 const app = express();
 
