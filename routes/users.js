@@ -1,6 +1,5 @@
 
 const {User} = require('../models/user'); 
-const register = require('./functions/register');
 const bcrypt = require('bcryptjs');
 const mongoose = require('mongoose');
 const express = require('express');
