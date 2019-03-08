@@ -1,7 +1,7 @@
 
 const {User} = require('../models/user'); 
 const bcrypt = require('bcryptjs');
-
+const auth = require('basic-auth');
 const mongoose = require('mongoose');
 const express = require('express');
 const router = express.Router();
