@@ -35,7 +35,7 @@ router.post('/register', async (req, res) => {
             type: type
         })
         user = await user.save();
-        return res.status(200).send('User added successfulle');
+        return res.status(200).send('User added successfully');
         //res.send(user);
     }
   });
