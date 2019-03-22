@@ -49,8 +49,7 @@ router.put('/loaner/:rfid', async (req, res) => {
     const loaner = await Loaner.findOneAndUpdate(req.params.rfid,
         { 
             bin: req.body.bin
-        });
-        //}, { new: true });
+        }, { new: true });
     
         if (!loaner) return res.status(404).send('The loaner with the given serial numer was not found.');
       
