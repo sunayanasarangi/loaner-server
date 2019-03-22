@@ -46,7 +46,7 @@ router.post('/loaner', async (req, res) => {
 
 router.put('/loaner/:rfid', async (req, res) => {
 
-    const loaner = await Loaner.findOneAndUpdate(req.params.rfid,
+    const loaner = await Loaner.findOneAndUpdate({rfid: req.params.rfid},
         { 
             bin: req.body.bin
         }, { new: true });
