@@ -44,13 +44,11 @@ router.post('/loaner', async (req, res) => {
 
 //PUT /api/loaners/loaner/:sku update a loaner
 //this has to be updated later
-router.put('/loaner/:sku', async (req, res) => {
+router.put('/loaner/:rfid', async (req, res) => {
 
-    const loaner = await Loaner.findOneAndUpdate(req.params.sku,
+    const loaner = await Loaner.findOneAndUpdate(req.params.rfid,
         { 
-            sku: req.body.sku,
-            serial_number: req.body.serial_number,
-            status: req.body.status
+            bin: req.body.bin
         }, { new: true });
     
         if (!loaner) return res.status(404).send('The loaner with the given serial numer was not found.');
