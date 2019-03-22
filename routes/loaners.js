@@ -42,14 +42,15 @@ router.post('/loaner', async (req, res) => {
 
   });
 
-//PUT /api/loaners/loaner/:sku update a loaner
-//this has to be updated later
+//PUT /api/loaners/loaner/:rfid update a loaner from control panel
+
 router.put('/loaner/:rfid', async (req, res) => {
 
     const loaner = await Loaner.findOneAndUpdate(req.params.rfid,
         { 
             bin: req.body.bin
-        }, { new: true });
+        });
+        //}, { new: true });
     
         if (!loaner) return res.status(404).send('The loaner with the given serial numer was not found.');
       
