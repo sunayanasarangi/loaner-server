@@ -17,6 +17,8 @@ router.get('/', async (req, res) => {
 router.post('/delivery', async (req, res) => {
     let materials = [];
     let picking_list = [];
+    let picking_list_itemised = [];
+
     for (var i in req.body.materials)
         materials.push(req.body.materials[i]);
     for (var j in req.body.picking_list)
