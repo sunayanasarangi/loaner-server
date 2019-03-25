@@ -21,6 +21,8 @@ router.post('/delivery', async (req, res) => {
         materials.push(req.body.materials[i]);
     for (var j in req.body.picking_list)
         picking_list.push(req.body.picking_list[j]);
+    for (var j in req.body.picking_list_itemised)
+        picking_list.push(req.body.picking_list_itemised[j]);
 
     const delivery = await Delivery.update(
         { delivery_number: req.body.delivery_number },
@@ -29,6 +31,7 @@ router.post('/delivery', async (req, res) => {
             delivery_number: req.body.delivery_number,
             materials: materials,
             picking_list: picking_list,
+            picking_list_itemised: picking_list_itemised,
             created_at: new Date()
         },
         { upsert: true });

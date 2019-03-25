@@ -6,6 +6,7 @@ const deliverySchema = new mongoose.Schema({
     delivery_number: String,
     materials: [],
     picking_list:[],
+    picking_list_itemised:[],
     created_at: Date
 })
 
