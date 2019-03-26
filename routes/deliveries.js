@@ -24,7 +24,7 @@ router.post('/delivery', async (req, res) => {
     for (var j in req.body.picking_list)
         picking_list.push(req.body.picking_list[j]);
     for (var k in req.body.picking_list_itemised)
-        picking_list.push(req.body.picking_list_itemised[k]);
+        picking_list_itemised.push(req.body.picking_list_itemised[k]);
 
     const delivery = await Delivery.update(
         { delivery_number: req.body.delivery_number },
