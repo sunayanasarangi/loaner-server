@@ -34,7 +34,8 @@ router.post('/loaner', async (req, res) => {
             description: req.body.description,
             serial_number: req.body.serial_number,
             status: req.body.status,
-            bin: req.body.bin
+            bin: req.body.bin,
+            last_issued_for: req.body.last_issued_for
         },
         { upsert: true });
     
@@ -48,10 +49,11 @@ router.put('/loaner/:rfid', async (req, res) => {
 
     const loaner = await Loaner.findOneAndUpdate({rfid: req.params.rfid},
         { 
-            bin: req.body.bin
+            bin: req.body.bin,
+            last_issued_for: req.body.last_issued_for
         }, { new: true });
     
-        if (!loaner) return res.status(404).send('The loaner with the given serial numer was not found.');
+        if (!loaner) return res.status(404).send('The loaner with the given rfid was not found.');
       
       res.send(loaner);
   });
