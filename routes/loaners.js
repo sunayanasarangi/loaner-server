@@ -22,6 +22,16 @@ router.get('/:loaner', async (req, res) => {
     res.send(loaner);
   });
 
+//GET /api/loaners/:rfid get a particular material
+
+router.get('/:rfid', async (req, res) => {
+    const loaner = await Loaner.findOne({rfid: req.params.rfid});
+    
+    if (!loaner) return res.status(404).send('The material was not found.');
+    
+    res.send(loaner);
+  });
+
 //POST /api/loaners/loaner post a new loaner if loaner does not exist, else update it
 
 router.post('/loaner', async (req, res) => {
