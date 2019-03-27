@@ -83,13 +83,13 @@ router.post('/register', async (req, res) => {
             
             if (!user1) return res.status(404).send('The password change failed.');
 
-            res.send(user1);
+            return res.send(user1);
 
         } else {
-            reject({ status: 401, message: 'Invalid Old Password !' });
+            return res.status(401).send('Invalid Old Password !');
         }
     } else {
-        return res.status(404).send('User with this email id does not exist');
+        return res.status(402).send('User with this email id does not exist');
     }
   });
 
