@@ -79,7 +79,7 @@ router.post('/register', async (req, res) => {
             const salt = bcrypt.genSaltSync(10);
             const hash = bcrypt.hashSync(new_password, salt);
             user.hashed_password = hash;
-
+            user = await user.save();
             return res.send(user);
 
         } else {
