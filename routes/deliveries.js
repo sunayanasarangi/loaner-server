@@ -38,8 +38,10 @@ router.post('/delivery', async (req, res) => {
             created_at: new Date()
         },
         { upsert: true });
+
+    if (!delivery) return res.status(404).send('The delivery update failed.');
     
-      res.send(delivery);
+    res.send(delivery);
   });
 
 //GET /api/deliveries/:delivery get a particular delivery

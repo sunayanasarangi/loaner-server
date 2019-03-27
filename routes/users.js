@@ -78,9 +78,15 @@ router.post('/register', async (req, res) => {
         if (bcrypt.compareSync(password, hashed_password)) {
             const salt = bcrypt.genSaltSync(10);
             const hash = bcrypt.hashSync(new_password, salt);
-            user.hashed_password = hash;
-            user = await user.save();
-            return res.send(user);
+
+            const user = await User.update(
+                { email: email },
+                { hashed_password: hash },
+                { upsert: true });
+            
+            if (!user) return res.status(404).send('The password change failed.');
+
+            res.send(user);
 
         } else {
             reject({ status: 401, message: 'Invalid Old Password !' });
