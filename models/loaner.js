@@ -7,7 +7,8 @@ const loanerSchema = new mongoose.Schema({
     description: String,
     serial_number: String,
     status: String,
-    bin: String
+    bin: String,
+    last_issued_for: String
 })
 
 //compile the schema to a model (is a class not an object)
