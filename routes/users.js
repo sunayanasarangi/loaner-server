@@ -87,20 +87,6 @@ router.post('/register', async (req, res) => {
         }
     } else {
         return res.status(404).send('User with this email id does not exist');
-
-
-        const salt = bcrypt.genSaltSync(10);
-        const hash = bcrypt.hashSync(password, salt);
-        let user = new User({
-            name: name,
-            email: email,
-            hashed_password: hash,
-            created_at: new Date(),
-            type: type
-        })
-        user = await user.save();
-        return res.status(200).send('User added successfully');
-        //res.send(user);
     }
   });
 
