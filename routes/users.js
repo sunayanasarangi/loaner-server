@@ -68,25 +68,22 @@ router.post('/register', async (req, res) => {
   //POST /api/users/password/change   change password
 
   router.put('/password/change', async (req, res) => {
-    const email = req.body.email;
-    const password = req.body.password;
-    const new_password = req.body.new_password;
-
-    const user = await User.findOne({email: email});
+    
+    const user = await User.find({email: req.body.email});
     if (user) {
         const hashed_password = user.hashed_password;
-        if (bcrypt.compareSync(password, hashed_password)) {
+        if (bcrypt.compareSync(req.body.password, hashed_password)) {
             const salt = bcrypt.genSaltSync(10);
-            const hash = bcrypt.hashSync(new_password, salt);
+            const hash = bcrypt.hashSync(req.body.new_password, salt);
 
-            const user = await User.update(
-                { email: email },
+            const user1 = await User.update(
+                { email: req.body.email },
                 { hashed_password: hash },
                 { upsert: true });
             
-            if (!user) return res.status(404).send('The password change failed.');
+            if (!user1) return res.status(404).send('The password change failed.');
 
-            res.send(user);
+            res.send(user1);
 
         } else {
             reject({ status: 401, message: 'Invalid Old Password !' });
