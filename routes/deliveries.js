@@ -34,6 +34,7 @@ router.post('/delivery', async (req, res) => {
             materials: materials,
             picking_list: picking_list,
             picking_list_itemised: picking_list_itemised,
+            count_itemised: req.body.count_itemised,
             created_at: new Date()
         },
         { upsert: true });

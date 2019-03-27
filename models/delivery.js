@@ -7,6 +7,7 @@ const deliverySchema = new mongoose.Schema({
     materials: [],
     picking_list:[],
     picking_list_itemised:[],
+    count_itemised: String,
     created_at: Date
 })
 
