@@ -14,7 +14,7 @@ router.get('/', async (req, res) => {
 
 //GET /api/loaners/:loaner get a particular material
 
-router.get('/:loaner', async (req, res) => {
+router.get('/loaner/:loaner', async (req, res) => {
     const loaner = await Loaner.findOne({sku: req.params.loaner});
     
     if (!loaner) return res.status(404).send('The material was not found.');
@@ -24,7 +24,7 @@ router.get('/:loaner', async (req, res) => {
 
 //GET /api/loaners/:rfid get a particular material
 
-router.get('/:rfid', async (req, res) => {
+router.get('/rfid/:rfid', async (req, res) => {
     const loaner = await Loaner.findOne({rfid: req.params.rfid});
     
     if (!loaner) return res.status(404).send('The material was not found.');
