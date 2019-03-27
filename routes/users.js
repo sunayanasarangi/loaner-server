@@ -64,4 +64,44 @@ router.post('/register', async (req, res) => {
     }
 
   });
+
+  //POST /api/users/password/change   change password
+
+  router.put('/password/change', async (req, res) => {
+    const email = req.body.email;
+    const password = req.body.password;
+    const new_password = req.body.new_password;
+
+    const user = await User.findOne({email: email});
+    if (user) {
+        const hashed_password = user.hashed_password;
+        if (bcrypt.compareSync(password, hashed_password)) {
+            const salt = bcrypt.genSaltSync(10);
+            const hash = bcrypt.hashSync(new_password, salt);
+            user.hashed_password = hash;
+
+            return res.send(user);
+
+        } else {
+            reject({ status: 401, message: 'Invalid Old Password !' });
+        }
+    } else {
+        return res.status(404).send('User with this email id does not exist');
+
+
+        const salt = bcrypt.genSaltSync(10);
+        const hash = bcrypt.hashSync(password, salt);
+        let user = new User({
+            name: name,
+            email: email,
+            hashed_password: hash,
+            created_at: new Date(),
+            type: type
+        })
+        user = await user.save();
+        return res.status(200).send('User added successfully');
+        //res.send(user);
+    }
+  });
+
 module.exports = router;
