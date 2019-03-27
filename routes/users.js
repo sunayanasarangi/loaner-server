@@ -69,7 +69,7 @@ router.post('/register', async (req, res) => {
 
   router.put('/password/change', async (req, res) => {
     
-    const user = await User.find({email: req.body.email});
+    const user = await User.findOne({email: req.body.email});
     if (user) {
         const hashed_password = user.hashed_password;
         if (bcrypt.compareSync(req.body.password, hashed_password)) {
