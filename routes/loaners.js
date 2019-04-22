@@ -12,7 +12,7 @@ router.get('/', async (req, res) => {
     res.send(loaners);
   });
 
-//GET /api/loaners/:loaner get a particular material
+//GET /api/loaners/loaner/:loaner get a particular material
 
 router.get('/loaner/:loaner', async (req, res) => {
     const loaner = await Loaner.findOne({sku: req.params.loaner});
@@ -22,7 +22,7 @@ router.get('/loaner/:loaner', async (req, res) => {
     res.send(loaner);
   });
 
-//GET /api/loaners/:rfid get a particular material
+//GET /api/loaners/rfid/:rfid get a particular material
 
 router.get('/rfid/:rfid', async (req, res) => {
     const loaner = await Loaner.findOne({rfid: req.params.rfid});
