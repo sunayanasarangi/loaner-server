@@ -1,13 +1,13 @@
 
 const mongoose = require('mongoose');
-/*
+
 const pickingListItemisedSchema = new mongoose.Schema({
     item_number: String,
     material: String,
     bin: String,
     qty: String,
     pick_status: boolean
-})*/
+})
 const deliverySchema = new mongoose.Schema({
     status: String,
     delivery_number: String,
