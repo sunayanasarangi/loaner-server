@@ -14,13 +14,13 @@ const deliverySchema = new mongoose.Schema({
     delivery_number: String,
     materials: [],
     picking_list:[],
-    picking_list_itemised:[PickingListItemised],
+    picking_list_itemised:[pickingListItemisedSchema],
     count_itemised: String,
     created_at: Date
 })
 
 //compile the schema to a model (is a class not an object)
-const PickingListItemised = mongoose.model('PickingListItemised', pickingListItemisedSchema);
+//const PickingListItemised = mongoose.model('PickingListItemised', pickingListItemisedSchema);
 const Delivery = mongoose.model('Delivery', deliverySchema);
 
 exports.Delivery = Delivery; 
