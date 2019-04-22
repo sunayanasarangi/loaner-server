@@ -58,10 +58,12 @@ router.get('/:delivery', async (req, res) => {
 
 router.put('/issue/:delivery', async (req, res) => {
 
-    const delivery = await Delivery.findOneAndUpdate({delivery_number: req.params.delivery},
+    const delivery = await Delivery.findOneAndUpdate(
+        {   delivery_number: req.params.delivery,
+            "picking_list_itemised._id": req.body.item_id
+        },
         { 
-            picking_list_itemised: req.body.picking_list_itemised,
-            status: req.body.delivery_status
+            $set: { "picking_list_itemised.$.pick_status" : req.body.pick_status }
         }, { new: true });
     
         if (!delivery) return res.status(404).send('The delivery with the given delivery number was not found.');
