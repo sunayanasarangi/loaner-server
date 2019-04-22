@@ -16,7 +16,7 @@ const deliverySchema = new mongoose.Schema({
     picking_list_itemised:[],
     count_itemised: String,
     created_at: Date
-});
+})
 
 //compile the schema to a model (is a class not an object)
 const Delivery = mongoose.model('Delivery', deliverySchema);
