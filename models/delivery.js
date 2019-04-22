@@ -6,7 +6,7 @@ const pickingListItemisedSchema = new mongoose.Schema({
     material: String,
     bin: String,
     qty: String,
-    pick_status: boolean
+    pick_status: Boolean
 })
 
 const deliverySchema = new mongoose.Schema({
