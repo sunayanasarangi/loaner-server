@@ -54,5 +54,18 @@ router.get('/:delivery', async (req, res) => {
     res.send(delivery);
   });
   
+//PUT /api/deliveries/issue/:delivery/:itemnum update picked status from control panel
+
+router.put('/issue/:delivery', async (req, res) => {
+
+    const loaner = await Loaner.findOneAndUpdate({ delivery_number: req.params.delivery },
+        { 
+            picking_list_itemised: req.body.picking_list_itemised
+        }, { new: true });
+    
+        if (!loaner) return res.status(404).send('The loaner with the given rfid was not found.');
+      
+      res.send(loaner);
+  });
 
 module.exports = router;
