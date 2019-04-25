@@ -53,6 +53,16 @@ router.get('/:delivery', async (req, res) => {
     
     res.send(delivery);
   });
+
+//GET /api/deliveries/itemised/:delivery get picking list itemised of a particular delivery
+
+router.get('/itemised/:delivery', async (req, res) => {
+    const delivery = await Delivery.findOne({delivery_number: req.params.delivery});
+    
+    if (!delivery) return res.status(404).send('The delivery with the given delivery number was not found.');
+    
+    res.send(delivery.picking_list_itemised);
+  });
   
 //PUT /api/deliveries/issue/:delivery update picked status from control panel
 
