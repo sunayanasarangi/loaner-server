@@ -78,10 +78,8 @@ router.put('/issue/:delivery', async (req, res) => {
     
         if (!delivery) return res.status(404).send('The delivery with the given delivery number was not found.');
       
-      //res.send(delivery.status);
-      res.write(delivery.picking_list_itemised);
-      res.write(delivery.status);
-      res.end();
+      res.send({picking_list_itemised: delivery.picking_list_itemised, status:delivery.status});
+      
   });
 
 module.exports = router;
