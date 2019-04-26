@@ -76,9 +76,9 @@ router.put('/issue/:delivery', async (req, res) => {
             $set: { "picking_list_itemised.$.pick_status" : req.body.pick_status }
         }, { new: true });
     
-        if (!delivery) return res.status(404).send('The delivery with the given delivery number was not found.');
+    if (!delivery) return res.status(404).send('The delivery with the given delivery number was not found.');
       
-      res.status(200).send({picking_list_itemised: delivery.picking_list_itemised, status: delivery.status});
+    res.status(200).json({picking_list_itemised: delivery.picking_list_itemised, status: delivery.status});
       
   });
 
