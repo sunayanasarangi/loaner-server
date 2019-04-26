@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const deliverySchema = new mongoose.Schema({
     status: String,
     delivery_number: String,
-    materials: [],
+    picking_list_header: [],
     picking_list:[],
     picking_list_itemised:[{
         item_number: String,
