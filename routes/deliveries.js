@@ -19,9 +19,9 @@ router.post('/delivery', async (req, res) => {
     let picking_list_header = [];
     let picking_list_itemised = [];
 
-    for (var i in req.body.picking_list_header)
+    for (var i in req.body.picking_list)
         picking_list.push(req.body.picking_list[i]);
-    for (var j in req.body.picking_list)
+    for (var j in req.body.picking_list_header)
         picking_list_header.push(req.body.picking_list_header[j]);
     for (var k in req.body.picking_list_itemised)
         picking_list_itemised.push(req.body.picking_list_itemised[k]);
