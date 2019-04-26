@@ -15,14 +15,14 @@ router.get('/', async (req, res) => {
 //POST /api/deliveries/delivery post a new delivery if delivery not found, else update the delivery
 
 router.post('/delivery', async (req, res) => {
-    let picking_list_header = [];
     let picking_list = [];
+    let picking_list_header = [];
     let picking_list_itemised = [];
 
     for (var i in req.body.picking_list_header)
-        picking_list_header.push(req.body.picking_list_header[i]);
+        picking_list.push(req.body.picking_list[i]);
     for (var j in req.body.picking_list)
-        picking_list.push(req.body.picking_list[j]);
+        picking_list_header.push(req.body.picking_list_header[j]);
     for (var k in req.body.picking_list_itemised)
         picking_list_itemised.push(req.body.picking_list_itemised[k]);
 
@@ -31,8 +31,8 @@ router.post('/delivery', async (req, res) => {
         { 
             status: req.body.status,
             delivery_number: req.body.delivery_number,
-            picking_list_header: picking_list_header,
             picking_list: picking_list,
+            picking_list_header: picking_list_header,
             picking_list_itemised: picking_list_itemised,
             count_itemised: req.body.count_itemised,
             created_at: new Date()
